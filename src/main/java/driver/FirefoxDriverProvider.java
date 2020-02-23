@@ -3,15 +3,15 @@ package driver;
 import com.codeborne.selenide.WebDriverProvider;
 import lombok.val;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import static io.github.bonigarcia.wdm.WebDriverManager.chromedriver;
+import static io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver;
 
-public class ChromeDriverProvider implements WebDriverProvider {
-    private static ChromeOptions getOptions() {
-        val options = new ChromeOptions();
+public class FirefoxDriverProvider implements WebDriverProvider {
+    private static FirefoxOptions getOptions() {
+        val options = new FirefoxOptions();
         options.addArguments("--no-sandbox");
         options.setHeadless(true);
         options.setAcceptInsecureCerts(true);
@@ -20,7 +20,7 @@ public class ChromeDriverProvider implements WebDriverProvider {
 
     @Override
     public WebDriver createDriver(DesiredCapabilities desiredCapabilities) {
-        chromedriver().setup();
-        return new ChromeDriver(getOptions());
+        firefoxdriver().setup();
+        return new FirefoxDriver(getOptions());
     }
 }

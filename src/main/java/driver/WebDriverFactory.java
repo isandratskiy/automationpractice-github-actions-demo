@@ -11,11 +11,17 @@ public class WebDriverFactory {
 
     public static void createDriverInstance() {
         switch (getBrowserProperty()) {
-            case "chrome":
+            case "chrome.remote":
                 CHROME.start();
                 break;
-            case "firefox":
+            case "firefox.remote":
                 FIREFOX.start();
+                break;
+            case "firefox.local":
+                LOCAL_FIREFOX.start();
+                break;
+            case "chrome.local":
+                LOCAL_CHROME.start();
                 break;
             default: LOCAL_CHROME.start();
         }
@@ -45,6 +51,13 @@ public class WebDriverFactory {
             void start() {
                 setConfiguration();
                 browser = ChromeDriverProvider.class.getName();
+            }
+        },
+        LOCAL_FIREFOX {
+            @Override
+            void start() {
+                setConfiguration();
+                browser = FirefoxDriverProvider.class.getName();
             }
         };
 

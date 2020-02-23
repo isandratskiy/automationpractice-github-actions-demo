@@ -32,6 +32,7 @@ public class PlaceOrderTest {
                 .startCheckout()
                 .proceedCheckoutSteps()
                 .confirmWithBankWire();
+
         assertEquals("Your order on My Store is complete.", checkoutBankWireStatus());
     }
 
@@ -44,6 +45,7 @@ public class PlaceOrderTest {
                 .startCheckout()
                 .proceedCheckoutSteps()
                 .confirmWithPayCheck();
+
         assertEquals("Your order on My Store is complete.", checkoutPayCheckStatus());
     }
 }

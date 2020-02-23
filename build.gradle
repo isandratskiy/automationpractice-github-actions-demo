@@ -11,6 +11,7 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 ext {
@@ -28,8 +29,19 @@ dependencies {
     testCompile group: "org.junit.jupiter", name: "junit-jupiter", version: "$junitVersion"
 }
 
-test {
+tasks.withType(Test) {
     useJUnitPlatform()
+
+    testLogging {
+        showStandardStreams = false
+        events "passed", "failed"
+        exceptionFormat = "full"
+        displayGranularity = 4
+    }
+
+    systemProperties["junit.jupiter.execution.parallel.enabled"] = true
+    systemProperties["junit.jupiter.execution.parallel.config.strategy"] = "fixed"
+    systemProperties["junit.jupiter.execution.parallel.config.fixed.parallelism"] = "$thread"
 }
 
 allure {
@@ -41,4 +53,12 @@ allure {
     useJUnit5 {
         version = "$allureVersion"
     }
+}
+
+task testFirefox(type: Test) {
+    systemProperties["browser"] = "firefox.$launch"
+}
+
+task testChrome(type: Test) {
+    systemProperties["browser"] = "chrome.$launch"
 }
