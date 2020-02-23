@@ -15,7 +15,7 @@ public class CartProductFragment {
         this.container = $("div[id=layer_cart]");
     }
 
-    @Step
+    @Step("start checkout")
     public CheckoutPage startCheckout() {
         this.container.$("a[title$='checkout']").click();
         return new CheckoutPage();

@@ -8,7 +8,7 @@ import lombok.AllArgsConstructor;
 public class ProductFragment {
     private SelenideElement container;
 
-    @Step
+    @Step("add product to card")
     public CartProductFragment addToCard() {
         this.container.$("a[class*='add_to_cart']").click();
         return new CartProductFragment();

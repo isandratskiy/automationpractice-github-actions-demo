@@ -11,24 +11,24 @@ import static org.apache.commons.lang3.StringUtils.*;
 
 public class AuthenticationPage extends AbstractPage {
 
-    @Step
+    @Step("start to login")
     public MyAccountPage loginAs(UserModel user) {
         val loginForm = $("#login_form");
         loginForm.$("#email").val(user.getEmail());
         loginForm.$("#passwd").val(user.getPassword());
         logger.atInfo().log(
-                "Login as : \n ".concat(user.getEmail() + LF + user.getPassword())
+                "login as : \n ".concat(user.getEmail() + LF + user.getPassword())
         );
         return new MyAccountPage();
     }
 
-    @Step
+    @Step("start to create account")
     public AccountCreationForm startCreateAccount(UserModel user) {
         val accountForm = $("#create-account_form");
         accountForm.$("input[name='email_create']").val(user.getEmail());
         accountForm.$("#SubmitCreate").click();
         logger.atInfo().log(
-                "User email is : \n ".concat(user.getEmail())
+                "create user with email : \n ".concat(user.getEmail())
         );
         return new AccountCreationForm();
     }

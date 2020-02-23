@@ -1,6 +1,7 @@
 package pageobjects.fragments;
 
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 import lombok.AllArgsConstructor;
 import pageobjects.pages.ProductDetailPage;
 
@@ -19,6 +20,7 @@ public class SearchFragment {
         this.container.$(".search_query").val(query);
     }
 
+    @Step("search product by query '{0}' ")
     public ProductDetailPage getFirstProductFromSearch(String query) {
         this.searchProduct(query);
         $$(".ac_results > ul > li").first().hover().click();

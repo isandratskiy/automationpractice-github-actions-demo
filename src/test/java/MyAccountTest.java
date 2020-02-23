@@ -19,10 +19,12 @@ public class MyAccountTest {
     void shouldDisplayAccountDetails(UserModel user) {
         val accountTitle = user.getFirstName() + SPACE + user.getLastName();
 
-        navigate("/", MainPage.class)
+        onPage(MainPage.class)
+                .open()
                 .clickSignInButton()
                 .startCreateAccount(user)
                 .registerUser(user);
+
         assertAll(
                 () -> assertEquals(accountTitle, getCustomerTitle()),
                 () -> assertTrue(isPresentLink(MY_ADDRESSES)),

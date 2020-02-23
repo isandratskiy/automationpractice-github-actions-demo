@@ -1,17 +1,20 @@
 package pageobjects.fragments;
 
 import com.codeborne.selenide.SelenideElement;
+import com.google.common.flogger.FluentLogger;
 import io.qameta.allure.Step;
 import lombok.AllArgsConstructor;
 import model.UserModel;
 
+import static com.google.common.flogger.FluentLogger.forEnclosingClass;
 import static java.lang.String.*;
 
 @AllArgsConstructor
 public class PersonalInfoForm {
+    private static final FluentLogger logger = forEnclosingClass();
     private SelenideElement container;
 
-    @Step
+    @Step("fill personal information")
     public PersonalInfoForm fillPersonalInfo(UserModel user) {
         this.setFirstName(user);
         this.setLastName(user);
@@ -29,6 +32,9 @@ public class PersonalInfoForm {
     }
 
     private void setPassword(UserModel user) {
+        logger.atInfo().log(
+                "set user password as : \n ".concat(user.getPassword())
+        );
         this.container.$("#passwd").val(user.getPassword());
     }
 

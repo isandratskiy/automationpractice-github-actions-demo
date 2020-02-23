@@ -47,7 +47,7 @@ public class AddressForm {
         this.container.$("select[name='id_state']").selectOptionByValue(valueOf(user.getState()));
     }
 
-    @Step
+    @Step("fill address information")
     public AddressForm fillAddressInfo(UserModel user) {
         this.setFirstName(user);
         this.setLastName(user);

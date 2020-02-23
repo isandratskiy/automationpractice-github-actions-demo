@@ -5,7 +5,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pageobjects.pages.MainPage;
 
-import static core.Page.navigate;
 import static core.Page.onPage;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static pageobjects.pages.CheckoutPage.*;
@@ -16,7 +15,8 @@ public class PlaceOrderTest {
 
     @BeforeEach
     void arrange(UserModel user) {
-        navigate("/", MainPage.class)
+        onPage(MainPage.class)
+                .open()
                 .clickSignInButton()
                 .startCreateAccount(user)
                 .registerUser(user);

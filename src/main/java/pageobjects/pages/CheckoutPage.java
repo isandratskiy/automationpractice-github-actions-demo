@@ -7,12 +7,12 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class CheckoutPage extends AbstractPage {
 
-    @Step
+    @Step("check Bank Wire payment status")
     public static String checkoutBankWireStatus() {
         return $("[class='cheque-indent']").text().trim();
     }
 
-    @Step
+    @Step("check Pay Check payment status")
     public static String checkoutPayCheckStatus() {
         return $("[class='alert alert-success']").text().trim();
     }
@@ -38,20 +38,23 @@ public class CheckoutPage extends AbstractPage {
         $("#cart_navigation > button[type='submit']").click();
     }
 
-    @Step
+    @Step("confirm Bank Wire payment method")
     public void confirmWithBankWire() {
+        logger.atInfo().log("confirm Bank Wire payment method");
         $(".bankwire").click();
         this.confirmOrder();
     }
 
-    @Step
+    @Step("confirm Pay Check payment method")
     public void confirmWithPayCheck() {
+        logger.atInfo().log("confirm Bank Wire payment method");
         $(".cheque").click();
         this.confirmOrder();
     }
 
-    @Step
+    @Step("proceed checkout steps")
     public CheckoutPage proceedCheckoutSteps() {
+        logger.atInfo().log("proceed checkout steps");
         this.proceedSummaryStep();
         this.proceedAddressStep();
         this.completeShippingStep();

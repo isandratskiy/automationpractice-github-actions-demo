@@ -35,7 +35,7 @@ public class AccountCreationForm {
                 .parent();
     }
 
-    @Step
+    @Step("register user")
     public AccountCreationForm registerUser(UserModel user) {
         this.getPersonalInfoForm().fillPersonalInfo(user);
         this.getAddressForm().fillAddressInfo(user);

@@ -10,12 +10,12 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class MyAccountPage extends AbstractPage {
 
-    @Step
+    @Step("check created customer title")
     public static String getCustomerTitle() {
         return $(".account[title*='customer account']").text().trim();
     }
 
-    @Step
+    @Step("check my account link : {0} ")
     public static boolean isPresentLink(AccountLinksEnum title) {
         val listContainer = $$(".myaccount-link-list").first();
         return listContainer.$$("li").findBy(text(title.getTitle())).is(visible);

@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class ProductDetailPage extends AbstractPage {
 
-    @Step
+    @Step("add product to cart")
     public CartProductFragment addToCard() {
         $("#add_to_cart").click();
         return new CartProductFragment();
