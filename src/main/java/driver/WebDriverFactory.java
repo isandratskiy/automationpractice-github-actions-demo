@@ -1,7 +1,7 @@
 package driver;
 
 import static com.codeborne.selenide.Configuration.*;
-import static core.Configuration.*;
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static driver.WebDriverFactory.Browser.*;
 import static java.lang.System.getProperty;
 import static org.apache.commons.lang3.StringUtils.*;
@@ -12,10 +12,10 @@ public class WebDriverFactory {
     public static void createDriverInstance() {
         switch (getBrowserProperty()) {
             case "chrome.remote":
-                CHROME.start();
+                REMOTE_CHROME.start();
                 break;
             case "firefox.remote":
-                FIREFOX.start();
+                REMOTE_FIREFOX.start();
                 break;
             case "firefox.local":
                 LOCAL_FIREFOX.start();
@@ -27,36 +27,36 @@ public class WebDriverFactory {
         }
     }
 
+    public static void shutdownDriverInstance() {
+        getWebDriver().quit();
+    }
+
     enum Browser {
-        CHROME {
+        REMOTE_CHROME {
             @Override
             void start() {
-                setConfiguration();
-                setRemoteInstance();
                 setRemoteCapabilities();
+                setRemoteInstance();
                 browser = "chrome";
             }
         },
-        FIREFOX {
+        REMOTE_FIREFOX {
             @Override
             void start() {
-                setConfiguration();
-                setRemoteInstance();
                 setRemoteCapabilities();
+                setRemoteInstance();
                 browser = "firefox";
             }
         },
         LOCAL_CHROME {
             @Override
             void start() {
-                setConfiguration();
                 browser = ChromeDriverProvider.class.getName();
             }
         },
         LOCAL_FIREFOX {
             @Override
             void start() {
-                setConfiguration();
                 browser = FirefoxDriverProvider.class.getName();
             }
         };
@@ -75,5 +75,9 @@ public class WebDriverFactory {
         browserCapabilities.setCapability("noProxy", true);
         browserCapabilities.setCapability("enableVNC", true);
         browserCapabilities.setCapability("enableVideo", false);
+    }
+
+    private static void setRemoteInstance() {
+        remote = "http://0.0.0.0:4444/wd/hub";
     }
 }

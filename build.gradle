@@ -19,6 +19,7 @@ ext {
     junitVersion = "5.6.0"
     allureVersion = "2.13.1"
     floggerVersion = "0.4"
+    javaOwnerVersion = "1.0.10"
 }
 
 dependencies {
@@ -26,6 +27,7 @@ dependencies {
     compile group: "com.google.flogger", name: "flogger", version: "$floggerVersion"
     compile group: "io.qameta.allure", name: "allure-selenide", version: "$allureVersion"
     compile group: "com.codeborne", name: "selenide", version: "$selenideVersion"
+    compile group: 'org.aeonbits.owner', name: 'owner', version: "$javaOwnerVersion"
     testCompile group: "org.junit.jupiter", name: "junit-jupiter", version: "$junitVersion"
 }
 
@@ -42,6 +44,7 @@ tasks.withType(Test) {
     systemProperties["junit.jupiter.execution.parallel.enabled"] = true
     systemProperties["junit.jupiter.execution.parallel.config.strategy"] = "fixed"
     systemProperties["junit.jupiter.execution.parallel.config.fixed.parallelism"] = "$thread"
+    systemProperties["site.locale"] = "$locale"
 }
 
 allure {

@@ -5,6 +5,7 @@ import org.junit.jupiter.api.*;
 import pageobjects.pages.MainPage;
 
 import static core.Page.*;
+import static data.AccountLinksEnum.*;
 import static org.apache.commons.lang3.StringUtils.*;
 import static org.junit.jupiter.api.Assertions.*;
 import static pageobjects.pages.MyAccountPage.*;
@@ -22,13 +23,12 @@ public class MyAccountTest {
                 .clickSignInButton()
                 .startCreateAccount(user)
                 .registerUser(user);
-
         assertAll(
                 () -> assertEquals(accountTitle, getCustomerTitle()),
-                () -> assertTrue(isPresentLink("ORDER HISTORY AND DETAILS")),
-                () -> assertTrue(isPresentLink("MY CREDIT SLIPS")),
-                () -> assertTrue(isPresentLink("MY ADDRESSES")),
-                () -> assertTrue(isPresentLink("MY PERSONAL INFORMATION"))
+                () -> assertTrue(isPresentLink(MY_ADDRESSES)),
+                () -> assertTrue(isPresentLink(MY_CREDITS_SLIPS)),
+                () -> assertTrue(isPresentLink(MY_PERSONAL_INFO)),
+                () -> assertTrue(isPresentLink(ORDER_HISTORY))
         );
     }
 }

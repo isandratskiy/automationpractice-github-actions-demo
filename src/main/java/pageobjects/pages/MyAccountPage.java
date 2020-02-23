@@ -1,5 +1,6 @@
 package pageobjects.pages;
 
+import data.AccountLinksEnum;
 import io.qameta.allure.Step;
 import lombok.val;
 import pageobjects.AbstractPage;
@@ -15,8 +16,8 @@ public class MyAccountPage extends AbstractPage {
     }
 
     @Step
-    public static boolean isPresentLink(String link) {
+    public static boolean isPresentLink(AccountLinksEnum title) {
         val listContainer = $$(".myaccount-link-list").first();
-        return listContainer.$$("li").findBy(text(link)).is(visible);
+        return listContainer.$$("li").findBy(text(title.getTitle())).is(visible);
     }
 }
