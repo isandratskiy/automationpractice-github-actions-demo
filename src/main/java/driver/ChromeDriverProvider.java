@@ -14,9 +14,6 @@ public class ChromeDriverProvider implements WebDriverProvider {
         options.addArguments("--no-sandbox");
         options.setHeadless(false);
         options.setAcceptInsecureCerts(true);
-        options.setCapability("noProxy", true);
-        options.setCapability("enableVNC", true);
-        options.setCapability("enableVideo", false);
         return options;
     }
 

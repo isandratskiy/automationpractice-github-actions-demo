@@ -1,6 +1,7 @@
 package driver;
 
 import static com.codeborne.selenide.Configuration.*;
+import static core.Configuration.*;
 import static driver.WebDriverFactory.Browser.*;
 import static java.lang.System.getProperty;
 import static org.apache.commons.lang3.StringUtils.*;
@@ -54,17 +55,6 @@ public class WebDriverFactory {
         return getProperty(BROWSER_PROPERTY) == null
                 ? EMPTY
                 : getProperty(BROWSER_PROPERTY);
-    }
-
-    private static void setConfiguration() {
-        timeout = 15000;
-        browserSize = "1920x1080";
-        baseUrl = "http://automationpractice.com/index.php";
-        fastSetValue = true;
-    }
-
-    private static void setRemoteInstance() {
-        remote = "http://0.0.0.0:4444/wd/hub";
     }
 
     private static void setRemoteCapabilities() {

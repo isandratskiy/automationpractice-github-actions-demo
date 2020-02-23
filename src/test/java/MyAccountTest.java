@@ -10,9 +10,11 @@ import static org.junit.jupiter.api.Assertions.*;
 import static pageobjects.pages.MyAccountPage.*;
 
 @BaseSetup
+@DisplayName("Account creation")
 public class MyAccountTest {
 
     @Test
+    @DisplayName("user should see account details after registration flow")
     void shouldDisplayAccountDetails(UserModel user) {
         val accountTitle = user.getFirstName() + SPACE + user.getLastName();
 

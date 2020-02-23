@@ -27,9 +27,6 @@ public class UserModel {
 	private String phone = "097965544333";
 
 	@Builder.Default
-	private String home_phone = "097965544333";
-
-	@Builder.Default
 	private String address1 = "801 Tom Martin Dr.Birmingham";
 
 	@Builder.Default

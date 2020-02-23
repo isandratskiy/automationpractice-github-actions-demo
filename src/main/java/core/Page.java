@@ -8,12 +8,13 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class Page {
 
-    @Step
+    @Step("Navigate to page : '{1}' ")
     public static <T extends AbstractPage> T navigate(String url, Class<T> pageClass) {
         return  open(url, pageClass);
     }
 
     @SneakyThrows
+    @Step("User no page : '{0}' ")
     public static <T extends AbstractPage> T onPage(Class<T> pageClass) {
         return pageClass.newInstance();
     }
