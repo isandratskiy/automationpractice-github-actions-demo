@@ -1,30 +1,15 @@
 package pageobjects.fragments;
 
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
+import lombok.AllArgsConstructor;
 import model.UserModel;
 
 import static java.lang.String.valueOf;
 
-public class AddressForm extends AccountCreationForm {
-
+@AllArgsConstructor
+public class AddressForm {
     private SelenideElement container;
-
-    public AddressForm(SelenideElement container) {
-        this.container = container;
-    }
-
-    public AddressForm fillAddressInfo(UserModel user) {
-        this.setFirstName(user);
-        this.setLastName(user);
-        this.setAddressFirstLine(user);
-        this.setAddressSecondLine(user);
-        this.setCity(user);
-        this.setState(user);
-        this.setPostCode(user);
-        this.setMobilePhone(user);
-        this.setAddressAlias(user);
-        return this;
-    }
 
     private void setFirstName(UserModel user) {
         this.container.$("#firstname").val(user.getFirstName());
@@ -62,7 +47,17 @@ public class AddressForm extends AccountCreationForm {
         this.container.$("select[name='id_state']").selectOptionByValue(valueOf(user.getState()));
     }
 
-
-
-
+    @Step
+    public AddressForm fillAddressInfo(UserModel user) {
+        this.setFirstName(user);
+        this.setLastName(user);
+        this.setAddressFirstLine(user);
+        this.setAddressSecondLine(user);
+        this.setCity(user);
+        this.setState(user);
+        this.setPostCode(user);
+        this.setMobilePhone(user);
+        this.setAddressAlias(user);
+        return this;
+    }
 }

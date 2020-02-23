@@ -1,16 +1,14 @@
 package pageobjects.fragments;
 
 import com.codeborne.selenide.SelenideElement;
-import pageobjects.pages.CategoryPage;
+import io.qameta.allure.Step;
+import lombok.AllArgsConstructor;
 
-public class ProductFragment extends CategoryPage {
-
+@AllArgsConstructor
+public class ProductFragment {
     private SelenideElement container;
 
-    public ProductFragment(SelenideElement container) {
-        this.container = container;
-    }
-
+    @Step
     public CartProductFragment addToCard() {
         this.container.$("a[class*='add_to_cart']").click();
         return new CartProductFragment();

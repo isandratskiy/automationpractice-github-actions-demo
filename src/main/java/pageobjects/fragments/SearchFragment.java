@@ -1,13 +1,14 @@
 package pageobjects.fragments;
 
 import com.codeborne.selenide.SelenideElement;
+import lombok.AllArgsConstructor;
 import pageobjects.pages.ProductDetailPage;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
+@AllArgsConstructor
 public class SearchFragment {
-
     private SelenideElement container;
 
     public SearchFragment() {

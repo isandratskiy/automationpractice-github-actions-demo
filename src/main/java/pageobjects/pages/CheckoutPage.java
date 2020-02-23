@@ -1,13 +1,18 @@
 package pageobjects.pages;
 
+import io.qameta.allure.Step;
+import pageobjects.AbstractPage;
+
 import static com.codeborne.selenide.Selenide.$;
 
-public class CheckoutPage {
+public class CheckoutPage extends AbstractPage {
 
+    @Step
     public static String checkoutBankWireStatus() {
         return $("[class='cheque-indent']").text().trim();
     }
 
+    @Step
     public static String checkoutPayCheckStatus() {
         return $("[class='alert alert-success']").text().trim();
     }
@@ -33,17 +38,20 @@ public class CheckoutPage {
         $("#cart_navigation > button[type='submit']").click();
     }
 
+    @Step
     public void confirmWithBankWire() {
         $(".bankwire").click();
         this.confirmOrder();
     }
 
-    public void confirmWithPayCheckMethod() {
+    @Step
+    public void confirmWithPayCheck() {
         $(".cheque").click();
         this.confirmOrder();
     }
 
-    public CheckoutPage completeCheckoutSteps() {
+    @Step
+    public CheckoutPage proceedCheckoutSteps() {
         this.proceedSummaryStep();
         this.proceedAddressStep();
         this.completeShippingStep();

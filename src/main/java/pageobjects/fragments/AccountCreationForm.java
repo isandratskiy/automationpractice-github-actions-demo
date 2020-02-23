@@ -1,18 +1,15 @@
 package pageobjects.fragments;
 
 import com.codeborne.selenide.SelenideElement;
-import com.google.common.flogger.FluentLogger;
 import io.qameta.allure.Step;
+import lombok.AllArgsConstructor;
 import model.UserModel;
-import pageobjects.pages.RegistrationPage;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
-import static com.google.common.flogger.FluentLogger.forEnclosingClass;
 
-public class AccountCreationForm extends RegistrationPage {
-    protected static final FluentLogger logger = forEnclosingClass();
-
+@AllArgsConstructor
+public class AccountCreationForm {
     private SelenideElement container;
 
     public AccountCreationForm() {
@@ -31,18 +28,18 @@ public class AccountCreationForm extends RegistrationPage {
         );
     }
 
+    private SelenideElement getFormBySubHeading(String heading) {
+        return this.container.$$(".account_creation > .page-subheading")
+                .filterBy(text(heading))
+                .first()
+                .parent();
+    }
+
     @Step
     public AccountCreationForm registerUser(UserModel user) {
         this.getPersonalInfoForm().fillPersonalInfo(user);
         this.getAddressForm().fillAddressInfo(user);
         this.container.$("#submitAccount").click();
         return this;
-    }
-
-    private SelenideElement getFormBySubHeading(String heading) {
-        return this.container.$$(".account_creation > .page-subheading")
-                .filterBy(text(heading))
-                .first()
-                .parent();
     }
 }

@@ -19,7 +19,6 @@ public class MyAccountTest {
         navigate("/", MainPage.class)
                 .clickSignInButton()
                 .startCreateAccount(user)
-                .getCreateAccountForm()
                 .registerUser(user);
 
         assertAll(

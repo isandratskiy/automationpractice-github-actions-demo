@@ -17,7 +17,6 @@ public class PlaceOrderTest {
         navigate("/", MainPage.class)
                 .clickSignInButton()
                 .startCreateAccount(user)
-                .getCreateAccountForm()
                 .registerUser(user);
     }
 
@@ -28,7 +27,7 @@ public class PlaceOrderTest {
                 .getFirstProduct()
                 .addToCard()
                 .startCheckout()
-                .completeCheckoutSteps()
+                .proceedCheckoutSteps()
                 .confirmWithBankWire();
         assertEquals("Your order on My Store is complete.", checkoutBankWireStatus());
     }
@@ -39,8 +38,8 @@ public class PlaceOrderTest {
                 .openProductPageFromSearch("shirt")
                 .addToCard()
                 .startCheckout()
-                .completeCheckoutSteps()
-                .confirmWithPayCheckMethod();
+                .proceedCheckoutSteps()
+                .confirmWithPayCheck();
         assertEquals("Your order on My Store is complete.", checkoutPayCheckStatus());
     }
 }

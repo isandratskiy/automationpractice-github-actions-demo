@@ -4,12 +4,14 @@ import io.qameta.allure.Step;
 import lombok.val;
 import model.UserModel;
 import pageobjects.AbstractPage;
+import pageobjects.fragments.AccountCreationForm;
 
 import static com.codeborne.selenide.Selenide.*;
 import static org.apache.commons.lang3.StringUtils.*;
 
 public class AuthenticationPage extends AbstractPage {
 
+    @Step
     public MyAccountPage loginAs(UserModel user) {
         val loginForm = $("#login_form");
         loginForm.$("#email").val(user.getEmail());
@@ -21,13 +23,13 @@ public class AuthenticationPage extends AbstractPage {
     }
 
     @Step
-    public RegistrationPage startCreateAccount(UserModel user) {
+    public AccountCreationForm startCreateAccount(UserModel user) {
         val accountForm = $("#create-account_form");
         accountForm.$("input[name='email_create']").val(user.getEmail());
         accountForm.$("#SubmitCreate").click();
         logger.atInfo().log(
                 "User email is : \n ".concat(user.getEmail())
         );
-        return new RegistrationPage();
+        return new AccountCreationForm();
     }
 }

@@ -1,6 +1,7 @@
 package pageobjects.pages;
 
 import com.codeborne.selenide.ElementsCollection;
+import io.qameta.allure.Step;
 import lombok.val;
 import pageobjects.AbstractPage;
 import pageobjects.fragments.ProductFragment;
@@ -9,6 +10,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class CategoryPage extends AbstractPage {
 
+    @Step
     public ProductFragment getFirstProduct() {
         return new ProductFragment(
                 this.getProductsList().first().hover()

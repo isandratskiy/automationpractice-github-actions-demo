@@ -1,18 +1,17 @@
 package pageobjects.fragments;
 
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
+import lombok.AllArgsConstructor;
 import model.UserModel;
 
 import static java.lang.String.*;
 
-public class PersonalInfoForm extends AccountCreationForm {
-
+@AllArgsConstructor
+public class PersonalInfoForm {
     private SelenideElement container;
 
-    public PersonalInfoForm(SelenideElement container) {
-        this.container = container;
-    }
-
+    @Step
     public PersonalInfoForm fillPersonalInfo(UserModel user) {
         this.setFirstName(user);
         this.setLastName(user);
@@ -31,7 +30,6 @@ public class PersonalInfoForm extends AccountCreationForm {
 
     private void setPassword(UserModel user) {
         this.container.$("#passwd").val(user.getPassword());
-        logger.atInfo().log("User email is : ".concat(user.getPassword()));
     }
 
     private void setBirthDay(UserModel user) {
