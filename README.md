@@ -29,7 +29,7 @@
  docker-compose up
 ```
 - **You can open Selenoid UI as localhost:8081 in browser** 
-## Import project
+## Import project (is optional)
 - should be imported as Gradle project with using Gradle wrapper
 - for run tests from IDEA You need to enable Annotation Processing
 ```
