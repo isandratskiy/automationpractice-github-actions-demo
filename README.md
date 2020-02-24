@@ -1,4 +1,4 @@
-# automationpractice-demo
+# automationpractice.com-demo
 ##### project stack :
 - **Gradle project** 
 - **Selenide as Web automation framework** 
