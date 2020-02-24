@@ -6,7 +6,6 @@ import static java.lang.System.getProperty;
 import static org.aeonbits.owner.ConfigFactory.setProperty;
 
 public class Configuration {
-
     private static final String SITE_LOCALE_PROP = "site.locale";
 
     public static void buildConfig() {
@@ -19,7 +18,9 @@ public class Configuration {
     }
 
     private static String getSiteLocaleProperty() {
-        return getProperty(SITE_LOCALE_PROP) == null ? "en" : getProperty(SITE_LOCALE_PROP);
+        return getProperty(SITE_LOCALE_PROP) == null
+                ? "en"
+                : getProperty(SITE_LOCALE_PROP);
     }
 
     private static void setSelenideConfiguration() {

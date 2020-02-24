@@ -35,7 +35,7 @@ tasks.withType(Test) {
     useJUnitPlatform()
 
     testLogging {
-        showStandardStreams = false
+        showStandardStreams = true
         events "passed", "failed"
         exceptionFormat = "full"
         displayGranularity = 4

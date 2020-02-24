@@ -5,7 +5,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pageobjects.pages.MainPage;
 
-import static core.Page.onPage;
+import static pageobjects.Page.onPage;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static pageobjects.pages.CheckoutPage.*;
 

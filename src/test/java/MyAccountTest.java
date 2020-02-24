@@ -4,7 +4,7 @@ import model.UserModel;
 import org.junit.jupiter.api.*;
 import pageobjects.pages.MainPage;
 
-import static core.Page.*;
+import static pageobjects.Page.*;
 import static data.AccountLinksEnum.*;
 import static org.apache.commons.lang3.StringUtils.*;
 import static org.junit.jupiter.api.Assertions.*;

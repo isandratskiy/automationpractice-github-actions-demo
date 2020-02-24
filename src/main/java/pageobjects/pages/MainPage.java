@@ -6,7 +6,7 @@ import pageobjects.fragments.CategoriesFragment;
 import pageobjects.fragments.SearchFragment;
 
 import static com.codeborne.selenide.Selenide.$;
-import static core.Page.navigate;
+import static pageobjects.Page.navigate;
 
 public class MainPage extends AbstractPage {
 
