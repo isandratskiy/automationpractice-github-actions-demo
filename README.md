@@ -28,7 +28,7 @@
 ```
  docker-compose up
 ```
-- ***You can open Selenoid UI as localhost:8081 in browser*** 
+- **You can open Selenoid UI as localhost:8081 in browser** 
 #### Import project (is optional)
 - should be imported as Gradle project with using Gradle wrapper
 - for run tests from IDEA You need to enable Annotation Processing
@@ -39,7 +39,7 @@
 #### Run tests from cli
 
 commands syntax:
-- ***local run example (Chrome browser as default and without parallelism)***
+- **local run example (Chrome browser as default and without parallelism)**
 - Windows :
 ```
  gradlew clean test
@@ -63,7 +63,7 @@ commands syntax:
 ```
  ./gradlew clean -Pthread=2 testFirefox
 ```
-- ***remote run with specific browser and parallelism***
+- **remote run with specific browser and parallelism**
 - Windows :
 ```
  gradlew clean -Pthread=2 -Plaunch=remote testChrome
@@ -79,7 +79,7 @@ commands syntax:
  ./gradlew clean -Pthread=2 -Plaunch=remote testFirefox
 ```
 #### Generate Allure report
-- ***generate report after full test run***
+- **generate report after full test run**
 - Windows :
 ```
  gradlew allureReport
@@ -88,7 +88,7 @@ commands syntax:
 ```
  ./gradlew allureReport
 ```
-- ***then run Allure web service***
+- **then run Allure web service**
 - Windows :
 ```
  gradlew allureServe
