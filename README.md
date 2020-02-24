@@ -4,7 +4,7 @@
 - **Selenide as Web automation framework** 
 - **JUnit5 as test runner xUnit framework** 
 - **Allure as test reporting** 
-- **JavaOwner for parameterizing test data** 
+- **JavaOwner for example parameterizing test data** 
 - **Flogger as logger with fluent interface** 
 
 
