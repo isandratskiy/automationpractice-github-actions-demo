@@ -10,7 +10,7 @@
 
 ## Required environment
 
-- Docker 
+- Docker (is optional for remote running)
 - Java 8
 
 ### Setup Selonoid
