@@ -1,7 +1,10 @@
 package core;
 
+import io.qameta.allure.selenide.AllureSelenide;
+
 import static com.codeborne.selenide.Configuration.*;
 import static com.codeborne.selenide.Configuration.fastSetValue;
+import static com.codeborne.selenide.logevents.SelenideLogger.*;
 import static java.lang.System.getProperty;
 import static org.aeonbits.owner.ConfigFactory.setProperty;
 
@@ -24,6 +27,7 @@ public class Configuration {
     }
 
     private static void setSelenideConfiguration() {
+        addListener("allure", new AllureSelenide().screenshots(true).savePageSource(false));
         timeout = 15000;
         browserSize = "1920x1080";
         baseUrl = "http://automationpractice.com/index.php";
