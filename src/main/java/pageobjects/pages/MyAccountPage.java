@@ -17,7 +17,7 @@ public class MyAccountPage extends AbstractPage {
 
     @Step("check my account link : {0} ")
     public static boolean isPresentLink(AccountLinksEnum title) {
-        val listContainer = $$(".myaccount-link-list").first();
+        val listContainer = $$(".myaccount-link-list").first().shouldBe(visible);
         return listContainer.$$("li").findBy(text(title.getTitle())).is(visible);
     }
 }
