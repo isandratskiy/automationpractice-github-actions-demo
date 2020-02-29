@@ -28,7 +28,7 @@ public class Configuration {
 
     private static void setSelenideConfiguration() {
         addListener("allure", new AllureSelenide().screenshots(true).savePageSource(false));
-        timeout = 15000;
+        timeout = 20000;
         browserSize = "1920x1080";
         baseUrl = "http://automationpractice.com/index.php";
         fastSetValue = true;

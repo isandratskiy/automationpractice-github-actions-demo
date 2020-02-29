@@ -1,8 +1,8 @@
 package pageobjects.pages;
 
+import com.codeborne.selenide.SelenideElement;
 import data.AccountLinksEnum;
 import io.qameta.allure.Step;
-import lombok.val;
 import pageobjects.AbstractPage;
 
 import static com.codeborne.selenide.Condition.*;
@@ -10,14 +10,17 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class MyAccountPage extends AbstractPage {
 
+    private static SelenideElement getAccountLinksList() {
+        return $$(".myaccount-link-list").first().shouldBe(visible);
+    }
+
     @Step("check created customer title")
     public static String getCustomerTitle() {
         return $(".account[title*='customer account']").text().trim();
     }
 
-    @Step("check my account link : {0} ")
+    @Step("check my account link : {title} ")
     public static boolean isPresentLink(AccountLinksEnum title) {
-        val listContainer = $$(".myaccount-link-list").first();
-        return listContainer.$$("li").findBy(text(title.getTitle())).is(visible);
+        return getAccountLinksList().$$("li").findBy(text(title.getTitle())).is(visible);
     }
 }

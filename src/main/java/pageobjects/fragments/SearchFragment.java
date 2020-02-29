@@ -20,7 +20,7 @@ public class SearchFragment {
         this.container.$(".search_query").val(query);
     }
 
-    @Step("search product by query '{0}' ")
+    @Step("search product by query '{query}' ")
     public ProductDetailPage getFirstProductFromSearch(String query) {
         this.searchProduct(query);
         $$(".ac_results > ul > li").first().hover().click();
