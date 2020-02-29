@@ -12,7 +12,7 @@ import static pageobjects.pages.MyAccountPage.*;
 
 @BaseSetup
 @DisplayName("Account creation")
-public class MyAccountTest {
+class MyAccountTest {
 
     @Test
     @DisplayName("user should see account details after registration flow")

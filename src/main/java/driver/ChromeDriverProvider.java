@@ -13,7 +13,7 @@ public class ChromeDriverProvider implements WebDriverProvider {
     private static ChromeOptions getOptions() {
         val options = new ChromeOptions();
         options.addArguments("--no-sandbox");
-        options.setHeadless(false);
+        options.setHeadless(true);
         options.setAcceptInsecureCerts(true);
         return options;
     }

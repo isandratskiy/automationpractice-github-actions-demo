@@ -11,7 +11,7 @@ import static pageobjects.pages.CheckoutPage.*;
 
 @BaseSetup
 @DisplayName("Order placement")
-public class PlaceOrderTest {
+class PlaceOrderTest {
 
     @BeforeEach
     void arrange(UserModel user) {

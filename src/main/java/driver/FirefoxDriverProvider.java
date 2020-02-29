@@ -13,7 +13,7 @@ public class FirefoxDriverProvider implements WebDriverProvider {
     private static FirefoxOptions getOptions() {
         val options = new FirefoxOptions();
         options.addArguments("--no-sandbox");
-        options.setHeadless(false);
+        options.setHeadless(true);
         options.setAcceptInsecureCerts(true);
         return options;
     }
