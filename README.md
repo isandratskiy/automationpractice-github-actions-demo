@@ -14,13 +14,6 @@
 - Java 8
 
 #### Setup Selonoid
-
-- run selenoid_start.sh
-- Windows :
-```
- selenoid_start.sh
-```
-- MacOS :
 ```
  ./selenoid_start.sh
 ```
@@ -40,23 +33,10 @@
 
 commands syntax:
 - **local run example (Chrome browser as default and without parallelism)**
-- Windows :
-```
- gradlew clean test
-```
-- MacOS :
 ```
  ./gradlew clean test
 ```
-- **local run with specific browser and parallelism** 
-- Windows :
-```
- gradlew clean -Pthread=2 testChrome
-```
-```
- gradlew clean -Pthread=2 testFirefox
-```
-- MacOS :  
+- **local run with specific browser and parallelism**
 ```
  ./gradlew clean -Pthread=2 testChrome
 ```
@@ -64,14 +44,6 @@ commands syntax:
  ./gradlew clean -Pthread=2 testFirefox
 ```
 - **remote run with specific browser and parallelism**
-- Windows :
-```
- gradlew clean -Pthread=2 -Plaunch=remote testChrome
-```
-```
- gradlew clean -Pthread=2 -Plaunch=remote testFirefox
-```
-- MacOS :
 ```
  ./gradlew clean -Pthread=2 -Plaunch=remote testChrome
 ```
@@ -80,20 +52,10 @@ commands syntax:
 ```
 #### Generate Allure report
 - **generate report after full test run**
-- Windows :
-```
- gradlew allureReport
-```
-- MacOS :
 ```
  ./gradlew allureReport
 ```
 - **then run Allure web service**
-- Windows :
-```
- gradlew allureServe
-```
-- MacOS :
 ```
  ./gradlew allureServe
 ```
