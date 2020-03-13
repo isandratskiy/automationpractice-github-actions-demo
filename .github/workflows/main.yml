@@ -33,7 +33,7 @@ jobs:
 
       - name: Generate Allure report
         if: always()
-        run: mvn allure:report
+        run: ./gradlew allureReport
         continue-on-error: true
 
       - name: Deploy report to Github Pages
