@@ -21,7 +21,7 @@ jobs:
       - name: test with firefox browser
         run: ./gradlew clean -Pthread=3 -Plaunch=remote testFirefox
         id:
-          - name: Get Allure history
+      - name: Get Allure history
         uses: actions/checkout@v2
         with:
           ref: gh-pages
