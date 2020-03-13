@@ -16,7 +16,7 @@ jobs:
         run: ./selenoid_start.sh
         
       - name: test with chrome browser
-        run: ./gradlew clean -Pthread=2 -Plaunch=remote testChrome
+        run: ./gradlew clean -Pthread=3 -Plaunch=remote testChrome
         
       - name: test with firefox browser
-        run: ./gradlew clean -Pthread=2 -Plaunch=remote testFirefox
+        run: ./gradlew clean -Pthread=3 -Plaunch=remote testFirefox
