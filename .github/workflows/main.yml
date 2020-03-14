@@ -17,6 +17,7 @@ jobs:
 
       - name: Run UI-Automation tests with Chrome browser
         run: ./gradlew clean -Pthread=3 -Plaunch=remote testChrome
+        continue-on-error: true
 
       - name: Get Allure history
         uses: actions/checkout@v2
