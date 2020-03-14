@@ -35,6 +35,11 @@ jobs:
         if: always()
         run: ./gradlew allureReport
         continue-on-error: true
+        
+      - uses: actions/upload-artifact@master
+        with:
+          name: allure-report
+          path: target/site/allure-gradle-report
 
       - name: deploy Allure report
         if: always()
@@ -42,4 +47,4 @@ jobs:
         env:
           ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: target/site/allure-report
+          PUBLISH_DIR: target/site/allure-gradle-report
