@@ -1,43 +1,47 @@
 {
-  "uid" : "658859e978588874",
+  "uid" : "a931e46badda67ac",
   "name" : "user should see account details after registration flow",
   "fullName" : "MyAccountTest.shouldDisplayAccountDetails",
   "historyId" : "39bcefc4820bdc30b9ab0dd5c4dc827e",
   "time" : {
-    "start" : 1584148985991,
-    "stop" : 1584149008295,
-    "duration" : 22304
+    "start" : 1584149906809,
+    "stop" : 1584149926646,
+    "duration" : 19837
   },
   "description" : "",
-  "status" : "passed",
+  "status" : "failed",
+  "statusMessage" : "All account links should be displayed. (1 failure)\n\torg.opentest4j.AssertionFailedError: expected: <-----> but was: <John Doe>",
+  "statusTrace" : "org.opentest4j.MultipleFailuresError: All account links should be displayed. (1 failure)\n\torg.opentest4j.AssertionFailedError: expected: <-----> but was: <John Doe>\n\tat org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:80)\n\tat org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)\n\tat org.junit.jupiter.api.Assertions.assertAll(Assertions.java:2856)\n\tat MyAccountTest.shouldDisplayAccountDetails(MyAccountTest.java:28)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)\n\tat org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:205)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:201)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)\n\tat org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:171)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:115)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)\n\tat org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:171)\n\tat java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:189)\n\tat java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)\n\tat java.util.concurrent.ForkJoinTask.doJoin(ForkJoinTask.java:389)\n\tat java.util.concurrent.ForkJoinTask.join(ForkJoinTask.java:719)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.joinConcurrentTasksInReverseOrderToEnableWorkStealing(ForkJoinPoolHierarchicalTestExecutorService.java:148)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:122)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)\n\tat org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:171)\n\tat java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:189)\n\tat java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)\n\tat java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)\n\tat java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)\n\tat java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)\n\tSuppressed: org.opentest4j.AssertionFailedError: expected: <-----> but was: <John Doe>\n\t\tat org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)\n\t\tat org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)\n\t\tat org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)\n\t\tat org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)\n\t\tat org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)\n\t\tat MyAccountTest.lambda$shouldDisplayAccountDetails$0(MyAccountTest.java:29)\n\t\tat org.junit.jupiter.api.AssertAll.lambda$assertAll$1(AssertAll.java:68)\n\t\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\t\tat java.util.stream.ReferencePipeline$11$1.accept(ReferencePipeline.java:440)\n\t\tat java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)\n\t\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)\n\t\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)\n\t\tat java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)\n\t\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\t\tat java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566)\n\t\tat org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:77)\n\t\t... 65 more\n",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ ],
   "testStage" : {
     "description" : "",
-    "status" : "passed",
+    "status" : "failed",
+    "statusMessage" : "All account links should be displayed. (1 failure)\n\torg.opentest4j.AssertionFailedError: expected: <-----> but was: <John Doe>",
+    "statusTrace" : "org.opentest4j.MultipleFailuresError: All account links should be displayed. (1 failure)\n\torg.opentest4j.AssertionFailedError: expected: <-----> but was: <John Doe>\n\tat org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:80)\n\tat org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)\n\tat org.junit.jupiter.api.Assertions.assertAll(Assertions.java:2856)\n\tat MyAccountTest.shouldDisplayAccountDetails(MyAccountTest.java:28)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)\n\tat org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:205)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:201)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)\n\tat org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:171)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:115)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)\n\tat org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:171)\n\tat java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:189)\n\tat java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)\n\tat java.util.concurrent.ForkJoinTask.doJoin(ForkJoinTask.java:389)\n\tat java.util.concurrent.ForkJoinTask.join(ForkJoinTask.java:719)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.joinConcurrentTasksInReverseOrderToEnableWorkStealing(ForkJoinPoolHierarchicalTestExecutorService.java:148)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:122)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)\n\tat org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:171)\n\tat java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:189)\n\tat java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)\n\tat java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)\n\tat java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)\n\tat java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)\n\tSuppressed: org.opentest4j.AssertionFailedError: expected: <-----> but was: <John Doe>\n\t\tat org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)\n\t\tat org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)\n\t\tat org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)\n\t\tat org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)\n\t\tat org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)\n\t\tat MyAccountTest.lambda$shouldDisplayAccountDetails$0(MyAccountTest.java:29)\n\t\tat org.junit.jupiter.api.AssertAll.lambda$assertAll$1(AssertAll.java:68)\n\t\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\t\tat java.util.stream.ReferencePipeline$11$1.accept(ReferencePipeline.java:440)\n\t\tat java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)\n\t\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)\n\t\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)\n\t\tat java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)\n\t\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\t\tat java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566)\n\t\tat org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:77)\n\t\t... 65 more\n",
     "steps" : [ {
       "name" : "open main page",
       "time" : {
-        "start" : 1584148986132,
-        "stop" : 1584148996430,
-        "duration" : 10298
+        "start" : 1584149906985,
+        "stop" : 1584149913955,
+        "duration" : 6970
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "navigate to page : 'class pageobjects.pages.MainPage' ",
         "time" : {
-          "start" : 1584148986134,
-          "stop" : 1584148996429,
-          "duration" : 10295
+          "start" : 1584149906986,
+          "stop" : 1584149913949,
+          "duration" : 6963
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "$(open) http://automationpractice.com/index.php/",
           "time" : {
-            "start" : 1584148986204,
-            "stop" : 1584148996429,
-            "duration" : 10225
+            "start" : 1584149907044,
+            "stop" : 1584149913949,
+            "duration" : 6905
           },
           "status" : "passed",
           "steps" : [ ],
@@ -70,17 +74,17 @@
     }, {
       "name" : "click SignIn button",
       "time" : {
-        "start" : 1584148996430,
-        "stop" : 1584148998028,
-        "duration" : 1598
+        "start" : 1584149913956,
+        "stop" : 1584149916745,
+        "duration" : 2789
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "$(.login) click()",
         "time" : {
-          "start" : 1584148996430,
-          "stop" : 1584148998027,
-          "duration" : 1597
+          "start" : 1584149913956,
+          "stop" : 1584149916744,
+          "duration" : 2788
         },
         "status" : "passed",
         "steps" : [ ],
@@ -100,16 +104,16 @@
     }, {
       "name" : "start to create account",
       "time" : {
-        "start" : 1584148998028,
-        "stop" : 1584148999064,
-        "duration" : 1036
+        "start" : 1584149916745,
+        "stop" : 1584149917301,
+        "duration" : 556
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "$(#create-account_form) $(input[name='email_create'])",
         "time" : {
-          "start" : 1584148998028,
-          "stop" : 1584148998028,
+          "start" : 1584149916745,
+          "stop" : 1584149916745,
           "duration" : 0
         },
         "status" : "passed",
@@ -121,40 +125,25 @@
         "shouldDisplayMessage" : false,
         "hasContent" : false
       }, {
-        "name" : "$(input[name='email_create']) val(mrgrvev@gmail.com)",
+        "name" : "$(input[name='email_create']) val(rnDZaIY@gmail.com)",
         "time" : {
-          "start" : 1584148998028,
-          "stop" : 1584148998929,
-          "duration" : 901
+          "start" : 1584149916745,
+          "stop" : 1584149917052,
+          "duration" : 307
         },
         "status" : "passed",
-        "steps" : [ {
-          "name" : "$(#create-account_form) should(exist)",
-          "time" : {
-            "start" : 1584148998259,
-            "stop" : 1584148998614,
-            "duration" : 355
-          },
-          "status" : "passed",
-          "steps" : [ ],
-          "attachments" : [ ],
-          "parameters" : [ ],
-          "stepsCount" : 0,
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "hasContent" : false
-        } ],
+        "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
-        "stepsCount" : 1,
+        "stepsCount" : 0,
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "hasContent" : true
+        "hasContent" : false
       }, {
         "name" : "$(#create-account_form) $(#SubmitCreate)",
         "time" : {
-          "start" : 1584148998930,
-          "stop" : 1584148998930,
+          "start" : 1584149917053,
+          "stop" : 1584149917053,
           "duration" : 0
         },
         "status" : "passed",
@@ -168,9 +157,9 @@
       }, {
         "name" : "$(#SubmitCreate) click()",
         "time" : {
-          "start" : 1584148998930,
-          "stop" : 1584148999062,
-          "duration" : 132
+          "start" : 1584149917053,
+          "stop" : 1584149917301,
+          "duration" : 248
         },
         "status" : "passed",
         "steps" : [ ],
@@ -184,25 +173,25 @@
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "user",
-        "value" : "UserModel(firstName=John, lastName=Doe, email=mrgrvev@gmail.com, password=MYANZnTaRB, phone=097965544333, address1=801 Tom Martin Dr.Birmingham, address2=AL 35211, city=Birmingham, postcode=88443, addressAlias=AL35211, dayBirth=15, monthBirth=12, yearBirth=1988, state=1)"
+        "value" : "UserModel(firstName=John, lastName=Doe, email=rnDZaIY@gmail.com, password=AkDYPWnBap, phone=097965544333, address1=801 Tom Martin Dr.Birmingham, address2=AL 35211, city=Birmingham, postcode=88443, addressAlias=AL35211, dayBirth=15, monthBirth=12, yearBirth=1988, state=1)"
       } ],
-      "stepsCount" : 5,
+      "stepsCount" : 4,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
       "name" : "register user",
       "time" : {
-        "start" : 1584148999064,
-        "stop" : 1584149007037,
-        "duration" : 7973
+        "start" : 1584149917301,
+        "stop" : 1584149925523,
+        "duration" : 8222
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "$(#account-creation_form) $$(.account_creation > .page-subheading)",
         "time" : {
-          "start" : 1584148999064,
-          "stop" : 1584148999064,
+          "start" : 1584149917301,
+          "stop" : 1584149917301,
           "duration" : 0
         },
         "status" : "passed",
@@ -216,8 +205,8 @@
       }, {
         "name" : "$(#account-creation_form/.account_creation > .page-subheading.filter(text 'Your personal information')[0]) parent()",
         "time" : {
-          "start" : 1584148999064,
-          "stop" : 1584148999064,
+          "start" : 1584149917301,
+          "stop" : 1584149917301,
           "duration" : 0
         },
         "status" : "passed",
@@ -231,16 +220,16 @@
       }, {
         "name" : "fill personal information",
         "time" : {
-          "start" : 1584148999065,
-          "stop" : 1584149002517,
-          "duration" : 3452
+          "start" : 1584149917302,
+          "stop" : 1584149921249,
+          "duration" : 3947
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "$(By.xpath: ..) $(#customer_firstname)",
           "time" : {
-            "start" : 1584148999065,
-            "stop" : 1584148999065,
+            "start" : 1584149917302,
+            "stop" : 1584149917302,
             "duration" : 0
           },
           "status" : "passed",
@@ -254,17 +243,17 @@
         }, {
           "name" : "$(#customer_firstname) val(John)",
           "time" : {
-            "start" : 1584148999065,
-            "stop" : 1584149000551,
-            "duration" : 1486
+            "start" : 1584149917302,
+            "stop" : 1584149919874,
+            "duration" : 2572
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "$(#account-creation_form) find elements(By.cssSelector: .account_creation > .page-subheading)",
             "time" : {
-              "start" : 1584148999065,
-              "stop" : 1584149000242,
-              "duration" : 1177
+              "start" : 1584149917302,
+              "stop" : 1584149919295,
+              "duration" : 1993
             },
             "status" : "passed",
             "steps" : [ ],
@@ -284,9 +273,9 @@
         }, {
           "name" : "$(By.xpath: ..) $(#customer_lastname)",
           "time" : {
-            "start" : 1584149000551,
-            "stop" : 1584149000551,
-            "duration" : 0
+            "start" : 1584149919874,
+            "stop" : 1584149919875,
+            "duration" : 1
           },
           "status" : "passed",
           "steps" : [ ],
@@ -299,17 +288,17 @@
         }, {
           "name" : "$(#customer_lastname) val(Doe)",
           "time" : {
-            "start" : 1584149000551,
-            "stop" : 1584149001184,
-            "duration" : 633
+            "start" : 1584149919875,
+            "stop" : 1584149920121,
+            "duration" : 246
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "$(#account-creation_form) find elements(By.cssSelector: .account_creation > .page-subheading)",
             "time" : {
-              "start" : 1584149000551,
-              "stop" : 1584149000645,
-              "duration" : 94
+              "start" : 1584149919875,
+              "stop" : 1584149919910,
+              "duration" : 35
             },
             "status" : "passed",
             "steps" : [ ],
@@ -329,8 +318,8 @@
         }, {
           "name" : "$(By.xpath: ..) $(#passwd)",
           "time" : {
-            "start" : 1584149001185,
-            "stop" : 1584149001185,
+            "start" : 1584149920122,
+            "stop" : 1584149920122,
             "duration" : 0
           },
           "status" : "passed",
@@ -342,19 +331,19 @@
           "shouldDisplayMessage" : false,
           "hasContent" : false
         }, {
-          "name" : "$(#passwd) val(MYANZnTaRB)",
+          "name" : "$(#passwd) val(AkDYPWnBap)",
           "time" : {
-            "start" : 1584149001185,
-            "stop" : 1584149001526,
-            "duration" : 341
+            "start" : 1584149920122,
+            "stop" : 1584149920386,
+            "duration" : 264
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "$(#account-creation_form) find elements(By.cssSelector: .account_creation > .page-subheading)",
             "time" : {
-              "start" : 1584149001185,
-              "stop" : 1584149001252,
-              "duration" : 67
+              "start" : 1584149920122,
+              "stop" : 1584149920182,
+              "duration" : 60
             },
             "status" : "passed",
             "steps" : [ ],
@@ -374,9 +363,9 @@
         }, {
           "name" : "$(By.xpath: ..) $(select[name='days'])",
           "time" : {
-            "start" : 1584149001526,
-            "stop" : 1584149001527,
-            "duration" : 1
+            "start" : 1584149920386,
+            "stop" : 1584149920386,
+            "duration" : 0
           },
           "status" : "passed",
           "steps" : [ ],
@@ -389,17 +378,17 @@
         }, {
           "name" : "$(select[name='days']) select option by value(15)",
           "time" : {
-            "start" : 1584149001527,
-            "stop" : 1584149001828,
-            "duration" : 301
+            "start" : 1584149920386,
+            "stop" : 1584149920699,
+            "duration" : 313
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "$(#account-creation_form) find elements(By.cssSelector: .account_creation > .page-subheading)",
             "time" : {
-              "start" : 1584149001527,
-              "stop" : 1584149001562,
-              "duration" : 35
+              "start" : 1584149920386,
+              "stop" : 1584149920445,
+              "duration" : 59
             },
             "status" : "passed",
             "steps" : [ ],
@@ -419,8 +408,8 @@
         }, {
           "name" : "$(By.xpath: ..) $(select[name='months'])",
           "time" : {
-            "start" : 1584149001828,
-            "stop" : 1584149001828,
+            "start" : 1584149920699,
+            "stop" : 1584149920699,
             "duration" : 0
           },
           "status" : "passed",
@@ -434,17 +423,17 @@
         }, {
           "name" : "$(select[name='months']) select option by value(12)",
           "time" : {
-            "start" : 1584149001828,
-            "stop" : 1584149002127,
-            "duration" : 299
+            "start" : 1584149920699,
+            "stop" : 1584149921029,
+            "duration" : 330
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "$(#account-creation_form) find elements(By.cssSelector: .account_creation > .page-subheading)",
             "time" : {
-              "start" : 1584149001828,
-              "stop" : 1584149001864,
-              "duration" : 36
+              "start" : 1584149920700,
+              "stop" : 1584149920747,
+              "duration" : 47
             },
             "status" : "passed",
             "steps" : [ ],
@@ -464,8 +453,8 @@
         }, {
           "name" : "$(By.xpath: ..) $(select[name='years'])",
           "time" : {
-            "start" : 1584149002127,
-            "stop" : 1584149002127,
+            "start" : 1584149921029,
+            "stop" : 1584149921029,
             "duration" : 0
           },
           "status" : "passed",
@@ -479,17 +468,17 @@
         }, {
           "name" : "$(select[name='years']) select option by value(1988)",
           "time" : {
-            "start" : 1584149002127,
-            "stop" : 1584149002517,
-            "duration" : 390
+            "start" : 1584149921030,
+            "stop" : 1584149921249,
+            "duration" : 219
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "$(#account-creation_form) find elements(By.cssSelector: .account_creation > .page-subheading)",
             "time" : {
-              "start" : 1584149002127,
-              "stop" : 1584149002182,
-              "duration" : 55
+              "start" : 1584149921030,
+              "stop" : 1584149921060,
+              "duration" : 30
             },
             "status" : "passed",
             "steps" : [ ],
@@ -510,7 +499,7 @@
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "user",
-          "value" : "UserModel(firstName=John, lastName=Doe, email=mrgrvev@gmail.com, password=MYANZnTaRB, phone=097965544333, address1=801 Tom Martin Dr.Birmingham, address2=AL 35211, city=Birmingham, postcode=88443, addressAlias=AL35211, dayBirth=15, monthBirth=12, yearBirth=1988, state=1)"
+          "value" : "UserModel(firstName=John, lastName=Doe, email=rnDZaIY@gmail.com, password=AkDYPWnBap, phone=097965544333, address1=801 Tom Martin Dr.Birmingham, address2=AL 35211, city=Birmingham, postcode=88443, addressAlias=AL35211, dayBirth=15, monthBirth=12, yearBirth=1988, state=1)"
         } ],
         "stepsCount" : 18,
         "attachmentsCount" : 0,
@@ -519,8 +508,8 @@
       }, {
         "name" : "$(#account-creation_form) $$(.account_creation > .page-subheading)",
         "time" : {
-          "start" : 1584149002517,
-          "stop" : 1584149002517,
+          "start" : 1584149921250,
+          "stop" : 1584149921250,
           "duration" : 0
         },
         "status" : "passed",
@@ -534,8 +523,8 @@
       }, {
         "name" : "$(#account-creation_form/.account_creation > .page-subheading.filter(text 'Your address')[0]) parent()",
         "time" : {
-          "start" : 1584149002517,
-          "stop" : 1584149002517,
+          "start" : 1584149921250,
+          "stop" : 1584149921250,
           "duration" : 0
         },
         "status" : "passed",
@@ -549,16 +538,16 @@
       }, {
         "name" : "fill address information",
         "time" : {
-          "start" : 1584149002517,
-          "stop" : 1584149004936,
-          "duration" : 2419
+          "start" : 1584149921250,
+          "stop" : 1584149923471,
+          "duration" : 2221
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "$(By.xpath: ..) $(#firstname)",
           "time" : {
-            "start" : 1584149002517,
-            "stop" : 1584149002517,
+            "start" : 1584149921250,
+            "stop" : 1584149921250,
             "duration" : 0
           },
           "status" : "passed",
@@ -572,17 +561,17 @@
         }, {
           "name" : "$(#firstname) val(John)",
           "time" : {
-            "start" : 1584149002517,
-            "stop" : 1584149002786,
-            "duration" : 269
+            "start" : 1584149921250,
+            "stop" : 1584149921467,
+            "duration" : 217
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "$(#account-creation_form) find elements(By.cssSelector: .account_creation > .page-subheading)",
             "time" : {
-              "start" : 1584149002517,
-              "stop" : 1584149002575,
-              "duration" : 58
+              "start" : 1584149921250,
+              "stop" : 1584149921272,
+              "duration" : 22
             },
             "status" : "passed",
             "steps" : [ ],
@@ -602,9 +591,9 @@
         }, {
           "name" : "$(By.xpath: ..) $(#lastname)",
           "time" : {
-            "start" : 1584149002786,
-            "stop" : 1584149002786,
-            "duration" : 0
+            "start" : 1584149921467,
+            "stop" : 1584149921468,
+            "duration" : 1
           },
           "status" : "passed",
           "steps" : [ ],
@@ -617,17 +606,17 @@
         }, {
           "name" : "$(#lastname) val(Doe)",
           "time" : {
-            "start" : 1584149002786,
-            "stop" : 1584149003022,
-            "duration" : 236
+            "start" : 1584149921468,
+            "stop" : 1584149921755,
+            "duration" : 287
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "$(#account-creation_form) find elements(By.cssSelector: .account_creation > .page-subheading)",
             "time" : {
-              "start" : 1584149002786,
-              "stop" : 1584149002851,
-              "duration" : 65
+              "start" : 1584149921468,
+              "stop" : 1584149921507,
+              "duration" : 39
             },
             "status" : "passed",
             "steps" : [ ],
@@ -647,8 +636,8 @@
         }, {
           "name" : "$(By.xpath: ..) $(#address1)",
           "time" : {
-            "start" : 1584149003022,
-            "stop" : 1584149003022,
+            "start" : 1584149921755,
+            "stop" : 1584149921755,
             "duration" : 0
           },
           "status" : "passed",
@@ -662,17 +651,17 @@
         }, {
           "name" : "$(#address1) val(801 Tom Martin Dr.Birmingham)",
           "time" : {
-            "start" : 1584149003022,
-            "stop" : 1584149003289,
-            "duration" : 267
+            "start" : 1584149921755,
+            "stop" : 1584149921998,
+            "duration" : 243
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "$(#account-creation_form) find elements(By.cssSelector: .account_creation > .page-subheading)",
             "time" : {
-              "start" : 1584149003022,
-              "stop" : 1584149003056,
-              "duration" : 34
+              "start" : 1584149921755,
+              "stop" : 1584149921790,
+              "duration" : 35
             },
             "status" : "passed",
             "steps" : [ ],
@@ -692,8 +681,8 @@
         }, {
           "name" : "$(By.xpath: ..) $(#address2)",
           "time" : {
-            "start" : 1584149003289,
-            "stop" : 1584149003289,
+            "start" : 1584149921998,
+            "stop" : 1584149921998,
             "duration" : 0
           },
           "status" : "passed",
@@ -707,17 +696,17 @@
         }, {
           "name" : "$(#address2) val(AL 35211)",
           "time" : {
-            "start" : 1584149003289,
-            "stop" : 1584149003598,
-            "duration" : 309
+            "start" : 1584149921998,
+            "stop" : 1584149922234,
+            "duration" : 236
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "$(#account-creation_form) find elements(By.cssSelector: .account_creation > .page-subheading)",
             "time" : {
-              "start" : 1584149003289,
-              "stop" : 1584149003337,
-              "duration" : 48
+              "start" : 1584149921998,
+              "stop" : 1584149922050,
+              "duration" : 52
             },
             "status" : "passed",
             "steps" : [ ],
@@ -737,8 +726,8 @@
         }, {
           "name" : "$(By.xpath: ..) $(#city)",
           "time" : {
-            "start" : 1584149003598,
-            "stop" : 1584149003598,
+            "start" : 1584149922234,
+            "stop" : 1584149922234,
             "duration" : 0
           },
           "status" : "passed",
@@ -752,17 +741,17 @@
         }, {
           "name" : "$(#city) val(Birmingham)",
           "time" : {
-            "start" : 1584149003598,
-            "stop" : 1584149003868,
-            "duration" : 270
+            "start" : 1584149922234,
+            "stop" : 1584149922446,
+            "duration" : 212
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "$(#account-creation_form) find elements(By.cssSelector: .account_creation > .page-subheading)",
             "time" : {
-              "start" : 1584149003598,
-              "stop" : 1584149003651,
-              "duration" : 53
+              "start" : 1584149922234,
+              "stop" : 1584149922263,
+              "duration" : 29
             },
             "status" : "passed",
             "steps" : [ ],
@@ -782,9 +771,9 @@
         }, {
           "name" : "$(By.xpath: ..) $(select[name='id_state'])",
           "time" : {
-            "start" : 1584149003868,
-            "stop" : 1584149003869,
-            "duration" : 1
+            "start" : 1584149922446,
+            "stop" : 1584149922446,
+            "duration" : 0
           },
           "status" : "passed",
           "steps" : [ ],
@@ -797,17 +786,17 @@
         }, {
           "name" : "$(select[name='id_state']) select option by value(1)",
           "time" : {
-            "start" : 1584149003869,
-            "stop" : 1584149004268,
-            "duration" : 399
+            "start" : 1584149922446,
+            "stop" : 1584149922735,
+            "duration" : 289
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "$(#account-creation_form) find elements(By.cssSelector: .account_creation > .page-subheading)",
             "time" : {
-              "start" : 1584149003869,
-              "stop" : 1584149003941,
-              "duration" : 72
+              "start" : 1584149922447,
+              "stop" : 1584149922485,
+              "duration" : 38
             },
             "status" : "passed",
             "steps" : [ ],
@@ -827,8 +816,8 @@
         }, {
           "name" : "$(By.xpath: ..) $(#postcode)",
           "time" : {
-            "start" : 1584149004268,
-            "stop" : 1584149004268,
+            "start" : 1584149922735,
+            "stop" : 1584149922735,
             "duration" : 0
           },
           "status" : "passed",
@@ -842,16 +831,16 @@
         }, {
           "name" : "$(#postcode) val(88443)",
           "time" : {
-            "start" : 1584149004268,
-            "stop" : 1584149004500,
-            "duration" : 232
+            "start" : 1584149922735,
+            "stop" : 1584149922916,
+            "duration" : 181
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "$(#account-creation_form) find elements(By.cssSelector: .account_creation > .page-subheading)",
             "time" : {
-              "start" : 1584149004268,
-              "stop" : 1584149004300,
+              "start" : 1584149922735,
+              "stop" : 1584149922767,
               "duration" : 32
             },
             "status" : "passed",
@@ -872,9 +861,9 @@
         }, {
           "name" : "$(By.xpath: ..) $(#phone_mobile)",
           "time" : {
-            "start" : 1584149004500,
-            "stop" : 1584149004500,
-            "duration" : 0
+            "start" : 1584149922916,
+            "stop" : 1584149922917,
+            "duration" : 1
           },
           "status" : "passed",
           "steps" : [ ],
@@ -887,17 +876,17 @@
         }, {
           "name" : "$(#phone_mobile) val(097965544333)",
           "time" : {
-            "start" : 1584149004500,
-            "stop" : 1584149004762,
-            "duration" : 262
+            "start" : 1584149922917,
+            "stop" : 1584149923281,
+            "duration" : 364
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "$(#account-creation_form) find elements(By.cssSelector: .account_creation > .page-subheading)",
             "time" : {
-              "start" : 1584149004500,
-              "stop" : 1584149004574,
-              "duration" : 74
+              "start" : 1584149922917,
+              "stop" : 1584149923007,
+              "duration" : 90
             },
             "status" : "passed",
             "steps" : [ ],
@@ -917,8 +906,8 @@
         }, {
           "name" : "$(By.xpath: ..) $(#alias)",
           "time" : {
-            "start" : 1584149004762,
-            "stop" : 1584149004763,
+            "start" : 1584149923281,
+            "stop" : 1584149923282,
             "duration" : 1
           },
           "status" : "passed",
@@ -932,17 +921,17 @@
         }, {
           "name" : "$(#alias) val(AL35211)",
           "time" : {
-            "start" : 1584149004764,
-            "stop" : 1584149004936,
-            "duration" : 172
+            "start" : 1584149923282,
+            "stop" : 1584149923471,
+            "duration" : 189
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "$(#account-creation_form) find elements(By.cssSelector: .account_creation > .page-subheading)",
             "time" : {
-              "start" : 1584149004764,
-              "stop" : 1584149004788,
-              "duration" : 24
+              "start" : 1584149923282,
+              "stop" : 1584149923322,
+              "duration" : 40
             },
             "status" : "passed",
             "steps" : [ ],
@@ -963,7 +952,7 @@
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "user",
-          "value" : "UserModel(firstName=John, lastName=Doe, email=mrgrvev@gmail.com, password=MYANZnTaRB, phone=097965544333, address1=801 Tom Martin Dr.Birmingham, address2=AL 35211, city=Birmingham, postcode=88443, addressAlias=AL35211, dayBirth=15, monthBirth=12, yearBirth=1988, state=1)"
+          "value" : "UserModel(firstName=John, lastName=Doe, email=rnDZaIY@gmail.com, password=AkDYPWnBap, phone=097965544333, address1=801 Tom Martin Dr.Birmingham, address2=AL 35211, city=Birmingham, postcode=88443, addressAlias=AL35211, dayBirth=15, monthBirth=12, yearBirth=1988, state=1)"
         } ],
         "stepsCount" : 27,
         "attachmentsCount" : 0,
@@ -972,8 +961,8 @@
       }, {
         "name" : "$(#account-creation_form) $(#submitAccount)",
         "time" : {
-          "start" : 1584149004936,
-          "stop" : 1584149004936,
+          "start" : 1584149923471,
+          "stop" : 1584149923471,
           "duration" : 0
         },
         "status" : "passed",
@@ -987,9 +976,9 @@
       }, {
         "name" : "$(#submitAccount) click()",
         "time" : {
-          "start" : 1584149004936,
-          "stop" : 1584149007037,
-          "duration" : 2101
+          "start" : 1584149923471,
+          "stop" : 1584149925523,
+          "duration" : 2052
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1003,7 +992,7 @@
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "user",
-        "value" : "UserModel(firstName=John, lastName=Doe, email=mrgrvev@gmail.com, password=MYANZnTaRB, phone=097965544333, address1=801 Tom Martin Dr.Birmingham, address2=AL 35211, city=Birmingham, postcode=88443, addressAlias=AL35211, dayBirth=15, monthBirth=12, yearBirth=1988, state=1)"
+        "value" : "UserModel(firstName=John, lastName=Doe, email=rnDZaIY@gmail.com, password=AkDYPWnBap, phone=097965544333, address1=801 Tom Martin Dr.Birmingham, address2=AL 35211, city=Birmingham, postcode=88443, addressAlias=AL35211, dayBirth=15, monthBirth=12, yearBirth=1988, state=1)"
       } ],
       "stepsCount" : 53,
       "attachmentsCount" : 0,
@@ -1012,17 +1001,17 @@
     }, {
       "name" : "check created customer title",
       "time" : {
-        "start" : 1584149007048,
-        "stop" : 1584149007149,
-        "duration" : 101
+        "start" : 1584149925537,
+        "stop" : 1584149925648,
+        "duration" : 111
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "$(.account[title*='customer account']) text()",
         "time" : {
-          "start" : 1584149007048,
-          "stop" : 1584149007149,
-          "duration" : 101
+          "start" : 1584149925537,
+          "stop" : 1584149925648,
+          "duration" : 111
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1042,17 +1031,17 @@
     }, {
       "name" : "check my account link : MY_ADDRESSES ",
       "time" : {
-        "start" : 1584149007281,
-        "stop" : 1584149007525,
-        "duration" : 244
+        "start" : 1584149925746,
+        "stop" : 1584149926114,
+        "duration" : 368
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "$(.myaccount-link-list[0]) should be(visible)",
         "time" : {
-          "start" : 1584149007281,
-          "stop" : 1584149007373,
-          "duration" : 92
+          "start" : 1584149925746,
+          "stop" : 1584149925846,
+          "duration" : 100
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1065,8 +1054,8 @@
       }, {
         "name" : "$(.myaccount-link-list[0]) $$(li)",
         "time" : {
-          "start" : 1584149007373,
-          "stop" : 1584149007373,
+          "start" : 1584149925846,
+          "stop" : 1584149925846,
           "duration" : 0
         },
         "status" : "passed",
@@ -1080,17 +1069,17 @@
       }, {
         "name" : "$(.myaccount-link-list[0]/li.findBy(text 'MY ADDRESSES')) is(visible)",
         "time" : {
-          "start" : 1584149007373,
-          "stop" : 1584149007525,
-          "duration" : 152
+          "start" : 1584149925846,
+          "stop" : 1584149926114,
+          "duration" : 268
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "$(.myaccount-link-list[0]) find elements(By.cssSelector: li)",
           "time" : {
-            "start" : 1584149007373,
-            "stop" : 1584149007417,
-            "duration" : 44
+            "start" : 1584149925846,
+            "stop" : 1584149925923,
+            "duration" : 77
           },
           "status" : "passed",
           "steps" : [ ],
@@ -1120,17 +1109,17 @@
     }, {
       "name" : "check my account link : MY_CREDITS_SLIPS ",
       "time" : {
-        "start" : 1584149007526,
-        "stop" : 1584149007664,
-        "duration" : 138
+        "start" : 1584149926115,
+        "stop" : 1584149926262,
+        "duration" : 147
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "$(.myaccount-link-list[0]) should be(visible)",
         "time" : {
-          "start" : 1584149007526,
-          "stop" : 1584149007570,
-          "duration" : 44
+          "start" : 1584149926115,
+          "stop" : 1584149926176,
+          "duration" : 61
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1143,8 +1132,8 @@
       }, {
         "name" : "$(.myaccount-link-list[0]) $$(li)",
         "time" : {
-          "start" : 1584149007570,
-          "stop" : 1584149007570,
+          "start" : 1584149926176,
+          "stop" : 1584149926176,
           "duration" : 0
         },
         "status" : "passed",
@@ -1158,17 +1147,17 @@
       }, {
         "name" : "$(.myaccount-link-list[0]/li.findBy(text 'MY CREDIT SLIPS')) is(visible)",
         "time" : {
-          "start" : 1584149007570,
-          "stop" : 1584149007664,
-          "duration" : 94
+          "start" : 1584149926176,
+          "stop" : 1584149926262,
+          "duration" : 86
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "$(.myaccount-link-list[0]) find elements(By.cssSelector: li)",
           "time" : {
-            "start" : 1584149007571,
-            "stop" : 1584149007598,
-            "duration" : 27
+            "start" : 1584149926176,
+            "stop" : 1584149926201,
+            "duration" : 25
           },
           "status" : "passed",
           "steps" : [ ],
@@ -1198,17 +1187,17 @@
     }, {
       "name" : "check my account link : MY_PERSONAL_INFO ",
       "time" : {
-        "start" : 1584149007664,
-        "stop" : 1584149008015,
-        "duration" : 351
+        "start" : 1584149926262,
+        "stop" : 1584149926471,
+        "duration" : 209
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "$(.myaccount-link-list[0]) should be(visible)",
         "time" : {
-          "start" : 1584149007664,
-          "stop" : 1584149007702,
-          "duration" : 38
+          "start" : 1584149926262,
+          "stop" : 1584149926304,
+          "duration" : 42
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1221,8 +1210,8 @@
       }, {
         "name" : "$(.myaccount-link-list[0]) $$(li)",
         "time" : {
-          "start" : 1584149007703,
-          "stop" : 1584149007703,
+          "start" : 1584149926304,
+          "stop" : 1584149926304,
           "duration" : 0
         },
         "status" : "passed",
@@ -1236,17 +1225,17 @@
       }, {
         "name" : "$(.myaccount-link-list[0]/li.findBy(text 'MY PERSONAL INFORMATION')) is(visible)",
         "time" : {
-          "start" : 1584149007703,
-          "stop" : 1584149008015,
-          "duration" : 312
+          "start" : 1584149926304,
+          "stop" : 1584149926471,
+          "duration" : 167
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "$(.myaccount-link-list[0]) find elements(By.cssSelector: li)",
           "time" : {
-            "start" : 1584149007703,
-            "stop" : 1584149007744,
-            "duration" : 41
+            "start" : 1584149926304,
+            "stop" : 1584149926373,
+            "duration" : 69
           },
           "status" : "passed",
           "steps" : [ ],
@@ -1276,17 +1265,17 @@
     }, {
       "name" : "check my account link : ORDER_HISTORY ",
       "time" : {
-        "start" : 1584149008016,
-        "stop" : 1584149008190,
-        "duration" : 174
+        "start" : 1584149926471,
+        "stop" : 1584149926559,
+        "duration" : 88
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "$(.myaccount-link-list[0]) should be(visible)",
         "time" : {
-          "start" : 1584149008016,
-          "stop" : 1584149008110,
-          "duration" : 94
+          "start" : 1584149926471,
+          "stop" : 1584149926504,
+          "duration" : 33
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1299,8 +1288,8 @@
       }, {
         "name" : "$(.myaccount-link-list[0]) $$(li)",
         "time" : {
-          "start" : 1584149008110,
-          "stop" : 1584149008110,
+          "start" : 1584149926504,
+          "stop" : 1584149926504,
           "duration" : 0
         },
         "status" : "passed",
@@ -1314,17 +1303,17 @@
       }, {
         "name" : "$(.myaccount-link-list[0]/li.findBy(text 'ORDER HISTORY AND DETAILS')) is(visible)",
         "time" : {
-          "start" : 1584149008111,
-          "stop" : 1584149008190,
-          "duration" : 79
+          "start" : 1584149926504,
+          "stop" : 1584149926559,
+          "duration" : 55
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "$(.myaccount-link-list[0]) find elements(By.cssSelector: li)",
           "time" : {
-            "start" : 1584149008111,
-            "stop" : 1584149008138,
-            "duration" : 27
+            "start" : 1584149926505,
+            "stop" : 1584149926527,
+            "duration" : 22
           },
           "status" : "passed",
           "steps" : [ ],
@@ -1354,9 +1343,9 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 87,
+    "stepsCount" : 86,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
+    "shouldDisplayMessage" : true,
     "hasContent" : true
   },
   "afterStages" : [ ],
@@ -1365,7 +1354,7 @@
     "value" : "fv-az33"
   }, {
     "name" : "thread",
-    "value" : "5034@fv-az33.ForkJoinPool-1-worker-1(12)"
+    "value" : "14469@fv-az33.ForkJoinPool-1-worker-1(12)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -1394,10 +1383,32 @@
   "retry" : false,
   "extra" : {
     "severity" : "normal",
-    "retries" : [ ],
-    "categories" : [ ],
+    "retries" : [ {
+      "uid" : "ddcec46ce89eac4f",
+      "status" : "failed",
+      "statusDetails" : "All account links should be displayed. (1 failure)\n\torg.opentest4j.AssertionFailedError: expected: <-----> but was: <John Doe>",
+      "time" : {
+        "start" : 1584149866617,
+        "stop" : 1584149884901,
+        "duration" : 18284
+      }
+    }, {
+      "uid" : "78ea32f97b35cbec",
+      "status" : "failed",
+      "statusDetails" : "All account links should be displayed. (1 failure)\n\torg.opentest4j.AssertionFailedError: expected: <-----> but was: <John Doe>",
+      "time" : {
+        "start" : 1584149824782,
+        "stop" : 1584149844800,
+        "duration" : 20018
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
     "tags" : [ ]
   },
-  "source" : "658859e978588874.json",
+  "source" : "a931e46badda67ac.json",
   "parameterValues" : [ ]
 }

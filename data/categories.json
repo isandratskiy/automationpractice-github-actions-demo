@@ -1,5 +1,64 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Index: 0, Size: 0",
+      "children" : [ {
+        "name" : "user can place order with product from search result",
+        "uid" : "461b7342dca218c8",
+        "parentUid" : "c9a92acda0ece9f24acb2c1b89b9f060",
+        "status" : "broken",
+        "time" : {
+          "start" : 1584149906809,
+          "stop" : 1584149946432,
+          "duration" : 39623
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c9a92acda0ece9f24acb2c1b89b9f060"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "All account links should be displayed. (1 failure)\n\torg.opentest4j.AssertionFailedError: expected: <-----> but was: <John Doe>",
+      "children" : [ {
+        "name" : "user should see account details after registration flow",
+        "uid" : "a931e46badda67ac",
+        "parentUid" : "53049ce217a877a7c521ff4a29414441",
+        "status" : "failed",
+        "time" : {
+          "start" : 1584149906809,
+          "stop" : 1584149926646,
+          "duration" : 19837
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "53049ce217a877a7c521ff4a29414441"
+    }, {
+      "name" : "Element not found {ul[class*='sf-menu clearfix menu-content']/li.findBy(text '-----')}\nExpected: visible or transparent: visible or have css value opacity=0\nScreenshot: file:/home/runner/work/automationpractice-demo/automationpractice-demo/build/reports/tests/1584149945776.0.png\nPage source: file:/home/runner/work/automationpractice-demo/automationpractice-demo/build/reports/tests/1584149945776.0.html\nTimeout: 20 s.\nCaused by: Element not found {ul[class*='sf-menu clearfix menu-content']/li.findBy(text '-----')}\nExpected: text '-----'\nScreenshot: null\nTimeout: 0 ms.",
+      "children" : [ {
+        "name" : "user can place order with product from category page",
+        "uid" : "8d49e47233084f7b",
+        "parentUid" : "b0e0b0b7da0d2c1c6ea8d690a7588661",
+        "status" : "failed",
+        "time" : {
+          "start" : 1584149906809,
+          "stop" : 1584149946066,
+          "duration" : 39257
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b0e0b0b7da0d2c1c6ea8d690a7588661"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
   "name" : "categories"
 }
