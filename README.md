@@ -5,8 +5,9 @@
 - **Gradle project** 
 - **Selenide as Web automation framework** 
 - **JUnit5 as test runner xUnit framework** 
+- **Project is building on GitHub Actions** 
 - **Allure as test reporting** 
-- **Allure Report URL : https://isandratskiy.github.io/automationpractice-demo**  
+- **Allure test report URL : https://isandratskiy.github.io/automationpractice-demo**  
 - **JavaOwner for example parameterizing test data** 
 - **Flogger as logger with fluent interface** 
 
