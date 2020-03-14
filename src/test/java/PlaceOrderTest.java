@@ -26,7 +26,7 @@ class PlaceOrderTest {
     @DisplayName("user can place order with product from category page")
     void canPlaceOrderFromCategoryPage() {
         onPage(MainPage.class)
-                .openCategoryPage("Women")
+                .openCategoryPage("-----")
                 .getFirstProduct()
                 .addToCard()
                 .startCheckout()
@@ -40,7 +40,7 @@ class PlaceOrderTest {
     @DisplayName("user can place order with product from search result")
     void canPlaceOrderFromSearch() {
         onPage(MainPage.class)
-                .openProductPageFromSearch("shirt")
+                .openProductPageFromSearch("-----")
                 .addToCard()
                 .startCheckout()
                 .proceedCheckoutSteps()
