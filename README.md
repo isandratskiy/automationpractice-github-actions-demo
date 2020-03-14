@@ -7,7 +7,7 @@
 - **JUnit5 as test runner xUnit framework** 
 - **Project is building on GitHub Actions** 
 - **Allure as test reporting** 
-- **Allure test report URL : https://isandratskiy.github.io/automationpractice-demo**  
+- **Allure test report URL : https://isandratskiy.github.io/automationpractice-github-actions-demo/**  
 - **JavaOwner for example parameterizing test data** 
 - **Flogger as logger with fluent interface** 
 
