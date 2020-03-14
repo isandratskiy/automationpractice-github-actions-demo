@@ -25,9 +25,9 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
-      - name: Save Allure history
-        run: cp -r $(pwd)/gh-pages/history/. $(pwd)/build/reports/allure-report/history
-        continue-on-error: true
+      #- name: Save Allure history
+      #  run: cp -r $(pwd)/gh-pages/history/. $(pwd)/build/reports/allure-report/history
+      #  continue-on-error: true
 
       - name: Generate Allure report
         if: always()
