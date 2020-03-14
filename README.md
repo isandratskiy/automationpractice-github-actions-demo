@@ -1,3 +1,5 @@
+![Run UI-Automation Tests](https://github.com/isandratskiy/automationpractice-demo/workflows/Run%20UI-Automation%20Tests/badge.svg)
+
 # automationpractice.com-demo
 #### Project stack :
 - **Gradle project** 
