@@ -1,5 +1,10 @@
 package driver;
 
+import lombok.SneakyThrows;
+import lombok.val;
+
+import java.net.URL;
+
 import static com.codeborne.selenide.Configuration.*;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static driver.WebDriverFactory.Browser.*;
@@ -35,29 +40,29 @@ public class WebDriverFactory {
         REMOTE_CHROME {
             @Override
             void start() {
-                setRemoteCapabilities();
-                setRemoteInstance();
-                browser = "chrome";
+                Class clazz = ChromeDriverProvider.Remote.class;
+                setRemoteInstance(clazz);
+                browser = clazz.getName();
             }
         },
         REMOTE_FIREFOX {
             @Override
             void start() {
-                setRemoteCapabilities();
-                setRemoteInstance();
-                browser = "firefox";
+                Class clazz = FirefoxDriverProvider.Remote.class;
+                setRemoteInstance(clazz);
+                browser = clazz.getName();
             }
         },
         LOCAL_CHROME {
             @Override
             void start() {
-                browser = ChromeDriverProvider.class.getName();
+                browser = ChromeDriverProvider.Local.class.getName();
             }
         },
         LOCAL_FIREFOX {
             @Override
             void start() {
-                browser = FirefoxDriverProvider.class.getName();
+                browser = FirefoxDriverProvider.Local.class.getName();
             }
         };
 
@@ -70,14 +75,10 @@ public class WebDriverFactory {
                 : getProperty(BROWSER_PROPERTY);
     }
 
-    private static void setRemoteCapabilities() {
-        browserCapabilities.acceptInsecureCerts();
-        browserCapabilities.setCapability("noProxy", true);
-        browserCapabilities.setCapability("enableVNC", true);
-        browserCapabilities.setCapability("enableVideo", false);
-    }
-
-    private static void setRemoteInstance() {
-        remote = "http://0.0.0.0:4444/wd/hub";
+    @SneakyThrows
+    private static void setRemoteInstance(Class clazz) {
+        val field = clazz.getDeclaredField("instance");
+        field.setAccessible(true);
+        field.set(null, new URL("http://0.0.0.0:4444/wd/hub"));
     }
 }

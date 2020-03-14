@@ -20,17 +20,17 @@ public class Configuration {
         setProperty(SITE_LOCALE_PROP, getSiteLocaleProperty());
     }
 
-    private static String getSiteLocaleProperty() {
-        return getProperty(SITE_LOCALE_PROP) == null
-                ? "en"
-                : getProperty(SITE_LOCALE_PROP);
-    }
-
     private static void setSelenideConfiguration() {
         addListener("allure", new AllureSelenide().screenshots(true).savePageSource(false));
         timeout = 20000;
         browserSize = "1920x1080";
         baseUrl = "http://automationpractice.com/index.php";
         fastSetValue = true;
+    }
+
+    private static String getSiteLocaleProperty() {
+        return getProperty(SITE_LOCALE_PROP) == null
+                ? "en"
+                : getProperty(SITE_LOCALE_PROP);
     }
 }
