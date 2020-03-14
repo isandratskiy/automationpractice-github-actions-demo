@@ -26,7 +26,7 @@ class MyAccountTest {
                 .registerUser(user);
 
         assertAll("All account links should be displayed.",
-                () -> assertEquals("-----", getCustomerTitle()),
+                () -> assertEquals(accountTitle, getCustomerTitle()),
                 () -> assertTrue(isPresentLink(MY_ADDRESSES)),
                 () -> assertTrue(isPresentLink(MY_CREDITS_SLIPS)),
                 () -> assertTrue(isPresentLink(MY_PERSONAL_INFO)),
