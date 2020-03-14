@@ -17,11 +17,6 @@ jobs:
 
       - name: test with chrome browser
         run: ./gradlew clean -Pthread=3 -Plaunch=remote testChrome
-        continue-on-error: true
-
-      - name: test with firefox browser
-        run: ./gradlew clean -Pthread=3 -Plaunch=remote testFirefox
-        continue-on-error: true
 
       - name: get Allure history
         uses: actions/checkout@v2

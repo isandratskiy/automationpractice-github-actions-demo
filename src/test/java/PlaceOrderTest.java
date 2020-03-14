@@ -40,7 +40,7 @@ class PlaceOrderTest {
     @DisplayName("user can place order with product from search result")
     void canPlaceOrderFromSearch() {
         onPage(MainPage.class)
-                .openProductPageFromSearch("shi34343rt6767")
+                .openProductPageFromSearch("shirt")
                 .addToCard()
                 .startCheckout()
                 .proceedCheckoutSteps()
