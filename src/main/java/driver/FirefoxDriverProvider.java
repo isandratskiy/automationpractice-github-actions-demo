@@ -38,7 +38,7 @@ public class FirefoxDriverProvider {
         @Override
         public WebDriver createDriver(DesiredCapabilities desiredCapabilities) {
             firefoxdriver().setup();
-            return new FirefoxDriver(getOptions());
+            return new FirefoxDriver(getOptions().setHeadless(true));
         }
     }
 }

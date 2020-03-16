@@ -51,7 +51,7 @@ public class ChromeDriverProvider {
         @Override
         public WebDriver createDriver(DesiredCapabilities desiredCapabilities) {
             chromedriver().setup();
-            return new ChromeDriver(getOptions());
+            return new ChromeDriver(getOptions().setHeadless(true));
         }
     }
 }
