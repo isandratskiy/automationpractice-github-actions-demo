@@ -15,7 +15,6 @@ import static io.github.bonigarcia.wdm.WebDriverManager.chromedriver;
 import static java.util.Arrays.*;
 
 public class ChromeDriverProvider {
-
     private static ChromeOptions getOptions() {
         val options = new ChromeOptions();
         options.addArguments("--no-sandbox");
