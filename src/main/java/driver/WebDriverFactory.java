@@ -20,9 +20,6 @@ public class WebDriverFactory {
             case "firefox.local":
                 LOCAL_FIREFOX.start();
                 break;
-            case "chrome.local":
-                LOCAL_CHROME.start();
-                break;
             default: LOCAL_CHROME.start();
         }
     }
