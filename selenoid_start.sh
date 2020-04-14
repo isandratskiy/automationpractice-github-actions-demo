@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "==============================> Pulling Chrome" 
-docker pull selenoid/vnc_chrome:80.0
+docker pull selenoid/vnc_chrome:81.0
 echo "==============================> Pulling Firefox"
 docker pull selenoid/vnc_firefox:74.0
 echo "Starting Selenoid Service ... "
