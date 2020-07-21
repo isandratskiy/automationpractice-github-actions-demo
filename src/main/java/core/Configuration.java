@@ -8,8 +8,11 @@ import static com.codeborne.selenide.logevents.SelenideLogger.*;
 import static java.lang.System.getProperty;
 import static org.aeonbits.owner.ConfigFactory.setProperty;
 
-public class Configuration {
+public final class Configuration {
     private static final String SITE_LOCALE_PROP = "site.locale";
+
+    private Configuration() {
+    }
 
     public static void buildConfig() {
         setSiteLocaleConfig();
@@ -21,9 +24,7 @@ public class Configuration {
     }
 
     private static String getSiteLocaleProperty() {
-        return getProperty(SITE_LOCALE_PROP) == null
-                ? "en"
-                : getProperty(SITE_LOCALE_PROP);
+        return getProperty(SITE_LOCALE_PROP, "en");
     }
 
     private static void setSelenideConfiguration() {

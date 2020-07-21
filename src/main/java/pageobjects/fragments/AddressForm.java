@@ -9,7 +9,7 @@ import static java.lang.String.valueOf;
 
 @AllArgsConstructor
 public class AddressForm {
-    private SelenideElement container;
+    private final SelenideElement container;
 
     private void setFirstName(UserModel user) {
         this.container.$("#firstname").val(user.getFirstName());

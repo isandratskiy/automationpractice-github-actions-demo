@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.$$;
 
 @AllArgsConstructor
 public class SearchFragment {
-    private SelenideElement container;
+    private final SelenideElement container;
 
     public SearchFragment() {
         this.container = $("#searchbox");

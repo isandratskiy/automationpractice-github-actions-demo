@@ -17,8 +17,7 @@ public class AuthenticationPage extends AbstractPage {
         loginForm.$("#email").val(user.getEmail());
         loginForm.$("#passwd").val(user.getPassword());
         logger.atInfo().log(
-                "login as : \n ".concat(user.getEmail() + LF + user.getPassword())
-        );
+                "login as : \n ".concat(user.getEmail() + LF + user.getPassword()));
         return new MyAccountPage();
     }
 
@@ -28,8 +27,7 @@ public class AuthenticationPage extends AbstractPage {
         accountForm.$("input[name='email_create']").val(user.getEmail());
         accountForm.$("#SubmitCreate").click();
         logger.atInfo().log(
-                "create user with email : \n ".concat(user.getEmail())
-        );
+                "create user with email : \n ".concat(user.getEmail()));
         return new AccountCreationForm();
     }
 }

@@ -14,8 +14,7 @@ public class CategoryPage extends AbstractPage {
     public ProductFragment getFirstProduct() {
         logger.atInfo().log("get first product from category");
         return new ProductFragment(
-                this.getProductsList().first().hover()
-        );
+                this.getProductsList().first().hover());
     }
 
     private ElementsCollection getProductsList() {

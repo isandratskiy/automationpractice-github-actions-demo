@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 @AllArgsConstructor
 public class CategoriesFragment {
-    private SelenideElement container;
+    private final SelenideElement container;
 
     public CategoriesFragment() {
         this.container = $("ul[class*='sf-menu clearfix menu-content']");

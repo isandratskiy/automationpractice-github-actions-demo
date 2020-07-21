@@ -9,7 +9,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import static io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver;
 
-public class FirefoxDriverProvider implements WebDriverProvider {
+public final class FirefoxDriverProvider implements WebDriverProvider {
     private static FirefoxOptions getOptions() {
         val options = new FirefoxOptions();
         options.addArguments("--no-sandbox");

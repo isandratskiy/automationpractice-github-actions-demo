@@ -6,7 +6,7 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 public class ProductFragment {
-    private SelenideElement container;
+    private final SelenideElement container;
 
     @Step("add product to card")
     public CartProductFragment addToCard() {

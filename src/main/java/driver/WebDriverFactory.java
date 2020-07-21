@@ -2,25 +2,24 @@ package driver;
 
 import static com.codeborne.selenide.Configuration.*;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
-import static driver.WebDriverFactory.Browser.*;
 import static java.lang.System.getProperty;
 import static org.apache.commons.lang3.StringUtils.*;
 
-public class WebDriverFactory {
+public final class WebDriverFactory {
     private static final String BROWSER_PROPERTY = "browser";
 
     public static void createDriverInstance() {
         switch (getBrowserProperty()) {
             case "chrome.remote":
-                REMOTE_CHROME.start();
+                Browser.REMOTE_CHROME.start();
                 break;
             case "firefox.remote":
-                REMOTE_FIREFOX.start();
+                Browser.REMOTE_FIREFOX.start();
                 break;
             case "firefox.local":
-                LOCAL_FIREFOX.start();
+                Browser.LOCAL_FIREFOX.start();
                 break;
-            default: LOCAL_CHROME.start();
+            default: Browser.LOCAL_CHROME.start();
         }
     }
 
@@ -62,13 +61,10 @@ public class WebDriverFactory {
     }
 
     private static String getBrowserProperty() {
-        return getProperty(BROWSER_PROPERTY) == null
-                ? EMPTY
-                : getProperty(BROWSER_PROPERTY);
+        return getProperty(BROWSER_PROPERTY, EMPTY);
     }
 
     private static void setRemoteCapabilities() {
-        browserCapabilities.acceptInsecureCerts();
         browserCapabilities.setCapability("noProxy", true);
         browserCapabilities.setCapability("enableVNC", true);
         browserCapabilities.setCapability("enableVideo", false);

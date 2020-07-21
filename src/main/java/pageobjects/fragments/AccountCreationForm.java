@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 @AllArgsConstructor
 public class AccountCreationForm {
-    private SelenideElement container;
+    private final SelenideElement container;
 
     public AccountCreationForm() {
         this.container = element("#account-creation_form");
@@ -18,14 +18,12 @@ public class AccountCreationForm {
 
     private PersonalInfoForm getPersonalInfoForm() {
         return new PersonalInfoForm(
-                this.getFormBySubHeading("Your personal information")
-        );
+                this.getFormBySubHeading("Your personal information"));
     }
 
     private AddressForm getAddressForm() {
         return new AddressForm(
-                this.getFormBySubHeading("Your address")
-        );
+                this.getFormBySubHeading("Your address"));
     }
 
     private SelenideElement getFormBySubHeading(String heading) {

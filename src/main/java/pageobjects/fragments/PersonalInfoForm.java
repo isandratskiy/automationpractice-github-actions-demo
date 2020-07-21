@@ -12,7 +12,7 @@ import static java.lang.String.*;
 @AllArgsConstructor
 public class PersonalInfoForm {
     private static final FluentLogger logger = forEnclosingClass();
-    private SelenideElement container;
+    private final SelenideElement container;
 
     @Step("fill personal information")
     public PersonalInfoForm fillPersonalInfo(UserModel user) {
@@ -32,9 +32,7 @@ public class PersonalInfoForm {
     }
 
     private void setPassword(UserModel user) {
-        logger.atInfo().log(
-                "set user password as : \n ".concat(user.getPassword())
-        );
+        logger.atInfo().log("set user password as : \n ".concat(user.getPassword()));
         this.container.$("#passwd").val(user.getPassword());
     }
 

@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 @AllArgsConstructor
 public class CartProductFragment {
-    private SelenideElement container;
+    private final SelenideElement container;
 
     public CartProductFragment() {
         this.container = $("div[id=layer_cart]");
@@ -20,6 +20,4 @@ public class CartProductFragment {
         this.container.$("a[title$='checkout']").click();
         return new CheckoutPage();
     }
-
-
 }
