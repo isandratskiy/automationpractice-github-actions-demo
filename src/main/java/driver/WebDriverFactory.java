@@ -27,7 +27,7 @@ public final class WebDriverFactory {
         getWebDriver().quit();
     }
 
-    enum Browser {
+    private enum Browser {
         REMOTE_CHROME {
             @Override
             void start() {

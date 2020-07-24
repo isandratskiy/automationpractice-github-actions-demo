@@ -7,6 +7,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import javax.annotation.Nonnull;
+
 import static io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver;
 
 public final class FirefoxDriverProvider implements WebDriverProvider {
@@ -19,7 +21,7 @@ public final class FirefoxDriverProvider implements WebDriverProvider {
     }
 
     @Override
-    public WebDriver createDriver(DesiredCapabilities desiredCapabilities) {
+    public WebDriver createDriver(@Nonnull DesiredCapabilities desiredCapabilities) {
         firefoxdriver().setup();
         return new FirefoxDriver(getOptions());
     }

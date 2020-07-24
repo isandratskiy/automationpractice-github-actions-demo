@@ -13,8 +13,7 @@ public abstract class Page {
     @Step("navigate to page : '{1}' ")
     public static <T extends AbstractPage> T navigate(String url, Class<T> pageClass) {
         logger.atInfo().log(
-                "navigate to : \n ".concat(pageClass.getSimpleName())
-        );
+                "navigate to : \n ".concat(pageClass.getSimpleName()));
         return  open(url, pageClass);
     }
 
