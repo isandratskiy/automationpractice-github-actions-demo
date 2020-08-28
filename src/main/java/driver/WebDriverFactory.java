@@ -1,9 +1,9 @@
 package driver;
 
 import static com.codeborne.selenide.Configuration.*;
-import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
+import static com.codeborne.selenide.WebDriverRunner.*;
 import static java.lang.System.getProperty;
-import static org.apache.commons.lang3.StringUtils.*;
+import static org.apache.commons.lang3.StringUtils.EMPTY;
 
 public final class WebDriverFactory {
     private static final String BROWSER_PROPERTY = "browser";
@@ -33,7 +33,7 @@ public final class WebDriverFactory {
             void start() {
                 setRemoteCapabilities();
                 setRemoteInstance();
-                browser = "chrome";
+                browser = CHROME;
             }
         },
         REMOTE_FIREFOX {
@@ -41,7 +41,7 @@ public final class WebDriverFactory {
             void start() {
                 setRemoteCapabilities();
                 setRemoteInstance();
-                browser = "firefox";
+                browser = FIREFOX;
             }
         },
         LOCAL_CHROME {
