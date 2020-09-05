@@ -31,3 +31,7 @@ jobs:
           ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: build/reports/allure-report
+      - uses: actions/upload-artifact@v2
+        with:
+         name: used_infrastructure
+         path: build/reports/allure-report
