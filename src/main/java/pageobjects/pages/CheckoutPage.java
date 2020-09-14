@@ -1,11 +1,11 @@
 package pageobjects.pages;
 
 import io.qameta.allure.Step;
-import pageobjects.AbstractPage;
+import pageobjects.Page;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class CheckoutPage extends AbstractPage {
+public class CheckoutPage extends Page {
 
     @Step("check Bank Wire payment status")
     public static String checkoutBankWireStatus() {

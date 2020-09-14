@@ -1,12 +1,12 @@
 package pageobjects.pages;
 
 import io.qameta.allure.Step;
-import pageobjects.AbstractPage;
+import pageobjects.Page;
 import pageobjects.fragments.CartProductFragment;
 
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
 
-public class ProductDetailPage extends AbstractPage {
+public class ProductDetailPage extends Page {
 
     @Step("add product to cart")
     public CartProductFragment addToCard() {

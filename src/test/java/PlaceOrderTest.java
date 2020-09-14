@@ -5,9 +5,9 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pageobjects.pages.MainPage;
 
-import static pageobjects.Page.onPage;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static pageobjects.pages.CheckoutPage.*;
+import static pageobjects.pages.CheckoutPage.checkoutBankWireStatus;
+import static pageobjects.pages.CheckoutPage.checkoutPayCheckStatus;
 
 @BaseSetup
 @DisplayName("Order placement")
@@ -15,8 +15,7 @@ class PlaceOrderTest {
 
     @BeforeEach
     void arrange(UserModel user) {
-        onPage(MainPage.class)
-                .open()
+        MainPage.open()
                 .clickSignInButton()
                 .startCreateAccount(user)
                 .registerUser(user);
@@ -25,7 +24,7 @@ class PlaceOrderTest {
     @Test
     @DisplayName("user can place order with product from category page")
     void canPlaceOrderFromCategoryPage() {
-        onPage(MainPage.class)
+        MainPage.open()
                 .openCategoryPage("Women")
                 .getFirstProduct()
                 .addToCard()
@@ -39,7 +38,7 @@ class PlaceOrderTest {
     @Test
     @DisplayName("user can place order with product from search result")
     void canPlaceOrderFromSearch() {
-        onPage(MainPage.class)
+        MainPage.open()
                 .openProductPageFromSearch("shirt")
                 .addToCard()
                 .startCheckout()

@@ -3,12 +3,12 @@ package pageobjects.pages;
 import com.codeborne.selenide.ElementsCollection;
 import io.qameta.allure.Step;
 import lombok.val;
-import pageobjects.AbstractPage;
+import pageobjects.Page;
 import pageobjects.fragments.ProductFragment;
 
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
 
-public class CategoryPage extends AbstractPage {
+public class CategoryPage extends Page {
 
     @Step("get first product from category")
     public ProductFragment getFirstProduct() {

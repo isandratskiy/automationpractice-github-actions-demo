@@ -1,20 +1,17 @@
 package pageobjects.pages;
 
 import io.qameta.allure.Step;
-import pageobjects.AbstractPage;
+import pageobjects.Page;
 import pageobjects.fragments.CategoriesFragment;
 import pageobjects.fragments.SearchFragment;
 
 import static com.codeborne.selenide.Selenide.$;
-import static pageobjects.Page.navigate;
 
-public class MainPage extends AbstractPage {
+public class MainPage extends Page {
 
     @Step("open main page")
-    public MainPage open() {
-        navigate("/", MainPage.class);
-        logger.atInfo().log("navigate to main page");
-        return this;
+    public static MainPage open() {
+        return navigate("/", MainPage.class);
     }
 
     @Step("click SignIn button")
