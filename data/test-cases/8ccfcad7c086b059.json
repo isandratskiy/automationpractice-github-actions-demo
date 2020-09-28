@@ -1,12 +1,12 @@
 {
-  "uid" : "e6dcf187ee5d09bb",
-  "name" : "user should see account details after registration flow",
-  "fullName" : "MyAccountTest.shouldDisplayAccountDetails",
-  "historyId" : "39bcefc4820bdc30b9ab0dd5c4dc827e",
+  "uid" : "8ccfcad7c086b059",
+  "name" : "user can place order with product from search result",
+  "fullName" : "PlaceOrderTest.canPlaceOrderFromSearch",
+  "historyId" : "147e0d6697c3766bc832dfc2f324614e",
   "time" : {
-    "start" : 1601176710803,
-    "stop" : 1601176739164,
-    "duration" : 28361
+    "start" : 1601263143400,
+    "stop" : 1601263187061,
+    "duration" : 43661
   },
   "description" : "",
   "status" : "passed",
@@ -19,25 +19,25 @@
     "steps" : [ {
       "name" : "open main page",
       "time" : {
-        "start" : 1601176710970,
-        "stop" : 1601176722327,
-        "duration" : 11357
+        "start" : 1601263143576,
+        "stop" : 1601263155311,
+        "duration" : 11735
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "navigate to page : 'class pageobjects.pages.MainPage' ",
         "time" : {
-          "start" : 1601176710971,
-          "stop" : 1601176722327,
-          "duration" : 11356
+          "start" : 1601263143576,
+          "stop" : 1601263155311,
+          "duration" : 11735
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "$(\"open\") http://automationpractice.com/index.php/",
           "time" : {
-            "start" : 1601176711064,
-            "stop" : 1601176722327,
-            "duration" : 11263
+            "start" : 1601263143682,
+            "stop" : 1601263155311,
+            "duration" : 11629
           },
           "status" : "passed",
           "steps" : [ ],
@@ -70,17 +70,17 @@
     }, {
       "name" : "click SignIn button",
       "time" : {
-        "start" : 1601176722327,
-        "stop" : 1601176724509,
-        "duration" : 2182
+        "start" : 1601263155311,
+        "stop" : 1601263158917,
+        "duration" : 3606
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "$(\".login\") click()",
         "time" : {
-          "start" : 1601176722328,
-          "stop" : 1601176724508,
-          "duration" : 2180
+          "start" : 1601263155311,
+          "stop" : 1601263158916,
+          "duration" : 3605
         },
         "status" : "passed",
         "steps" : [ ],
@@ -100,16 +100,16 @@
     }, {
       "name" : "start to create account",
       "time" : {
-        "start" : 1601176724509,
-        "stop" : 1601176725371,
-        "duration" : 862
+        "start" : 1601263158917,
+        "stop" : 1601263159804,
+        "duration" : 887
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "$(\"#create-account_form\") $(input[name='email_create'])",
         "time" : {
-          "start" : 1601176724511,
-          "stop" : 1601176724511,
+          "start" : 1601263158917,
+          "stop" : 1601263158917,
           "duration" : 0
         },
         "status" : "passed",
@@ -121,11 +121,11 @@
         "shouldDisplayMessage" : false,
         "hasContent" : false
       }, {
-        "name" : "$(\"input[name='email_create']\") val(WywYUw@gmail.com)",
+        "name" : "$(\"input[name='email_create']\") val(yqylKypSG@gmail.com)",
         "time" : {
-          "start" : 1601176724512,
-          "stop" : 1601176725038,
-          "duration" : 526
+          "start" : 1601263158918,
+          "stop" : 1601263159327,
+          "duration" : 409
         },
         "status" : "passed",
         "steps" : [ ],
@@ -138,8 +138,8 @@
       }, {
         "name" : "$(\"#create-account_form\") $(#SubmitCreate)",
         "time" : {
-          "start" : 1601176725038,
-          "stop" : 1601176725039,
+          "start" : 1601263159327,
+          "stop" : 1601263159328,
           "duration" : 1
         },
         "status" : "passed",
@@ -153,9 +153,9 @@
       }, {
         "name" : "$(\"#SubmitCreate\") click()",
         "time" : {
-          "start" : 1601176725039,
-          "stop" : 1601176725371,
-          "duration" : 332
+          "start" : 1601263159328,
+          "stop" : 1601263159803,
+          "duration" : 475
         },
         "status" : "passed",
         "steps" : [ ],
@@ -169,7 +169,7 @@
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "user",
-        "value" : "UserModel(firstName=John, lastName=Doe, email=WywYUw@gmail.com, password=BaRpSMrLfM, phone=097965544333, address1=801 Tom Martin Dr.Birmingham, address2=AL 35211, city=Birmingham, postcode=88443, addressAlias=AL35211, dayBirth=15, monthBirth=12, yearBirth=1988, state=1)"
+        "value" : "UserModel(firstName=John, lastName=Doe, email=yqylKypSG@gmail.com, password=aIiwqtNhNc, phone=097965544333, address1=801 Tom Martin Dr.Birmingham, address2=AL 35211, city=Birmingham, postcode=88443, addressAlias=AL35211, dayBirth=15, monthBirth=12, yearBirth=1988, state=1)"
       } ],
       "stepsCount" : 4,
       "attachmentsCount" : 0,
@@ -178,16 +178,16 @@
     }, {
       "name" : "register user",
       "time" : {
-        "start" : 1601176725371,
-        "stop" : 1601176737913,
-        "duration" : 12542
+        "start" : 1601263159804,
+        "stop" : 1601263171858,
+        "duration" : 12054
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "$(\"#account-creation_form\") $$(.account_creation > .page-subheading)",
         "time" : {
-          "start" : 1601176725371,
-          "stop" : 1601176725371,
+          "start" : 1601263159805,
+          "stop" : 1601263159805,
           "duration" : 0
         },
         "status" : "passed",
@@ -201,8 +201,8 @@
       }, {
         "name" : "$(\"#account-creation_form/.account_creation > .page-subheading.filter(text 'Your personal information')[0]\") parent()",
         "time" : {
-          "start" : 1601176725372,
-          "stop" : 1601176725372,
+          "start" : 1601263159805,
+          "stop" : 1601263159805,
           "duration" : 0
         },
         "status" : "passed",
@@ -216,16 +216,16 @@
       }, {
         "name" : "fill personal information",
         "time" : {
-          "start" : 1601176725372,
-          "stop" : 1601176731199,
-          "duration" : 5827
+          "start" : 1601263159808,
+          "stop" : 1601263165322,
+          "duration" : 5514
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "$(\"By.xpath: ..\") $(#customer_firstname)",
           "time" : {
-            "start" : 1601176725372,
-            "stop" : 1601176725372,
+            "start" : 1601263159808,
+            "stop" : 1601263159808,
             "duration" : 0
           },
           "status" : "passed",
@@ -239,25 +239,25 @@
         }, {
           "name" : "$(\"#customer_firstname\") val(John)",
           "time" : {
-            "start" : 1601176725372,
-            "stop" : 1601176728864,
-            "duration" : 3492
+            "start" : 1601263159808,
+            "stop" : 1601263162886,
+            "duration" : 3078
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "$(\"By.xpath: ..\") should(exist)",
             "time" : {
-              "start" : 1601176725412,
-              "stop" : 1601176728365,
-              "duration" : 2953
+              "start" : 1601263159829,
+              "stop" : 1601263162363,
+              "duration" : 2534
             },
             "status" : "passed",
             "steps" : [ {
               "name" : "$(\"#account-creation_form/.account_creation > .page-subheading.filter(text 'Your personal information')[0]\") should(exist)",
               "time" : {
-                "start" : 1601176725431,
-                "stop" : 1601176727609,
-                "duration" : 2178
+                "start" : 1601263159842,
+                "stop" : 1601263161603,
+                "duration" : 1761
               },
               "status" : "passed",
               "steps" : [ ],
@@ -284,8 +284,8 @@
         }, {
           "name" : "$(\"By.xpath: ..\") $(#customer_lastname)",
           "time" : {
-            "start" : 1601176728864,
-            "stop" : 1601176728864,
+            "start" : 1601263162886,
+            "stop" : 1601263162886,
             "duration" : 0
           },
           "status" : "passed",
@@ -299,9 +299,9 @@
         }, {
           "name" : "$(\"#customer_lastname\") val(Doe)",
           "time" : {
-            "start" : 1601176728864,
-            "stop" : 1601176729297,
-            "duration" : 433
+            "start" : 1601263162886,
+            "stop" : 1601263163273,
+            "duration" : 387
           },
           "status" : "passed",
           "steps" : [ ],
@@ -314,8 +314,8 @@
         }, {
           "name" : "$(\"By.xpath: ..\") $(#passwd)",
           "time" : {
-            "start" : 1601176729300,
-            "stop" : 1601176729300,
+            "start" : 1601263163276,
+            "stop" : 1601263163276,
             "duration" : 0
           },
           "status" : "passed",
@@ -327,11 +327,11 @@
           "shouldDisplayMessage" : false,
           "hasContent" : false
         }, {
-          "name" : "$(\"#passwd\") val(BaRpSMrLfM)",
+          "name" : "$(\"#passwd\") val(aIiwqtNhNc)",
           "time" : {
-            "start" : 1601176729300,
-            "stop" : 1601176729739,
-            "duration" : 439
+            "start" : 1601263163276,
+            "stop" : 1601263163717,
+            "duration" : 441
           },
           "status" : "passed",
           "steps" : [ ],
@@ -344,8 +344,8 @@
         }, {
           "name" : "$(\"By.xpath: ..\") $(select[name='days'])",
           "time" : {
-            "start" : 1601176729739,
-            "stop" : 1601176729739,
+            "start" : 1601263163717,
+            "stop" : 1601263163717,
             "duration" : 0
           },
           "status" : "passed",
@@ -359,9 +359,9 @@
         }, {
           "name" : "$(\"select[name='days']\") select option by value(15)",
           "time" : {
-            "start" : 1601176729739,
-            "stop" : 1601176730351,
-            "duration" : 612
+            "start" : 1601263163717,
+            "stop" : 1601263164332,
+            "duration" : 615
           },
           "status" : "passed",
           "steps" : [ ],
@@ -374,8 +374,8 @@
         }, {
           "name" : "$(\"By.xpath: ..\") $(select[name='months'])",
           "time" : {
-            "start" : 1601176730352,
-            "stop" : 1601176730352,
+            "start" : 1601263164332,
+            "stop" : 1601263164332,
             "duration" : 0
           },
           "status" : "passed",
@@ -389,9 +389,9 @@
         }, {
           "name" : "$(\"select[name='months']\") select option by value(12)",
           "time" : {
-            "start" : 1601176730352,
-            "stop" : 1601176730878,
-            "duration" : 526
+            "start" : 1601263164332,
+            "stop" : 1601263164922,
+            "duration" : 590
           },
           "status" : "passed",
           "steps" : [ ],
@@ -404,8 +404,8 @@
         }, {
           "name" : "$(\"By.xpath: ..\") $(select[name='years'])",
           "time" : {
-            "start" : 1601176730878,
-            "stop" : 1601176730878,
+            "start" : 1601263164922,
+            "stop" : 1601263164922,
             "duration" : 0
           },
           "status" : "passed",
@@ -419,9 +419,9 @@
         }, {
           "name" : "$(\"select[name='years']\") select option by value(1988)",
           "time" : {
-            "start" : 1601176730878,
-            "stop" : 1601176731199,
-            "duration" : 321
+            "start" : 1601263164923,
+            "stop" : 1601263165322,
+            "duration" : 399
           },
           "status" : "passed",
           "steps" : [ ],
@@ -435,7 +435,7 @@
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "user",
-          "value" : "UserModel(firstName=John, lastName=Doe, email=WywYUw@gmail.com, password=BaRpSMrLfM, phone=097965544333, address1=801 Tom Martin Dr.Birmingham, address2=AL 35211, city=Birmingham, postcode=88443, addressAlias=AL35211, dayBirth=15, monthBirth=12, yearBirth=1988, state=1)"
+          "value" : "UserModel(firstName=John, lastName=Doe, email=yqylKypSG@gmail.com, password=aIiwqtNhNc, phone=097965544333, address1=801 Tom Martin Dr.Birmingham, address2=AL 35211, city=Birmingham, postcode=88443, addressAlias=AL35211, dayBirth=15, monthBirth=12, yearBirth=1988, state=1)"
         } ],
         "stepsCount" : 14,
         "attachmentsCount" : 0,
@@ -444,8 +444,8 @@
       }, {
         "name" : "$(\"#account-creation_form\") $$(.account_creation > .page-subheading)",
         "time" : {
-          "start" : 1601176731199,
-          "stop" : 1601176731199,
+          "start" : 1601263165322,
+          "stop" : 1601263165322,
           "duration" : 0
         },
         "status" : "passed",
@@ -459,8 +459,8 @@
       }, {
         "name" : "$(\"#account-creation_form/.account_creation > .page-subheading.filter(text 'Your address')[0]\") parent()",
         "time" : {
-          "start" : 1601176731200,
-          "stop" : 1601176731200,
+          "start" : 1601263165323,
+          "stop" : 1601263165323,
           "duration" : 0
         },
         "status" : "passed",
@@ -474,16 +474,16 @@
       }, {
         "name" : "fill address information",
         "time" : {
-          "start" : 1601176731200,
-          "stop" : 1601176734375,
-          "duration" : 3175
+          "start" : 1601263165323,
+          "stop" : 1601263169160,
+          "duration" : 3837
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "$(\"By.xpath: ..\") $(#firstname)",
           "time" : {
-            "start" : 1601176731200,
-            "stop" : 1601176731200,
+            "start" : 1601263165323,
+            "stop" : 1601263165323,
             "duration" : 0
           },
           "status" : "passed",
@@ -497,9 +497,9 @@
         }, {
           "name" : "$(\"#firstname\") val(John)",
           "time" : {
-            "start" : 1601176731200,
-            "stop" : 1601176731478,
-            "duration" : 278
+            "start" : 1601263165323,
+            "stop" : 1601263165691,
+            "duration" : 368
           },
           "status" : "passed",
           "steps" : [ ],
@@ -512,8 +512,8 @@
         }, {
           "name" : "$(\"By.xpath: ..\") $(#lastname)",
           "time" : {
-            "start" : 1601176731478,
-            "stop" : 1601176731478,
+            "start" : 1601263165692,
+            "stop" : 1601263165692,
             "duration" : 0
           },
           "status" : "passed",
@@ -527,9 +527,9 @@
         }, {
           "name" : "$(\"#lastname\") val(Doe)",
           "time" : {
-            "start" : 1601176731478,
-            "stop" : 1601176731815,
-            "duration" : 337
+            "start" : 1601263165692,
+            "stop" : 1601263166091,
+            "duration" : 399
           },
           "status" : "passed",
           "steps" : [ ],
@@ -542,8 +542,8 @@
         }, {
           "name" : "$(\"By.xpath: ..\") $(#address1)",
           "time" : {
-            "start" : 1601176731816,
-            "stop" : 1601176731816,
+            "start" : 1601263166091,
+            "stop" : 1601263166091,
             "duration" : 0
           },
           "status" : "passed",
@@ -557,9 +557,9 @@
         }, {
           "name" : "$(\"#address1\") val(801 Tom Martin Dr.Birmingham)",
           "time" : {
-            "start" : 1601176731816,
-            "stop" : 1601176732109,
-            "duration" : 293
+            "start" : 1601263166091,
+            "stop" : 1601263166421,
+            "duration" : 330
           },
           "status" : "passed",
           "steps" : [ ],
@@ -572,8 +572,8 @@
         }, {
           "name" : "$(\"By.xpath: ..\") $(#address2)",
           "time" : {
-            "start" : 1601176732110,
-            "stop" : 1601176732110,
+            "start" : 1601263166421,
+            "stop" : 1601263166421,
             "duration" : 0
           },
           "status" : "passed",
@@ -587,9 +587,9 @@
         }, {
           "name" : "$(\"#address2\") val(AL 35211)",
           "time" : {
-            "start" : 1601176732110,
-            "stop" : 1601176732467,
-            "duration" : 357
+            "start" : 1601263166421,
+            "stop" : 1601263167008,
+            "duration" : 587
           },
           "status" : "passed",
           "steps" : [ ],
@@ -602,8 +602,8 @@
         }, {
           "name" : "$(\"By.xpath: ..\") $(#city)",
           "time" : {
-            "start" : 1601176732467,
-            "stop" : 1601176732467,
+            "start" : 1601263167008,
+            "stop" : 1601263167008,
             "duration" : 0
           },
           "status" : "passed",
@@ -617,9 +617,9 @@
         }, {
           "name" : "$(\"#city\") val(Birmingham)",
           "time" : {
-            "start" : 1601176732468,
-            "stop" : 1601176732775,
-            "duration" : 307
+            "start" : 1601263167008,
+            "stop" : 1601263167373,
+            "duration" : 365
           },
           "status" : "passed",
           "steps" : [ ],
@@ -632,8 +632,8 @@
         }, {
           "name" : "$(\"By.xpath: ..\") $(select[name='id_state'])",
           "time" : {
-            "start" : 1601176732775,
-            "stop" : 1601176732775,
+            "start" : 1601263167373,
+            "stop" : 1601263167373,
             "duration" : 0
           },
           "status" : "passed",
@@ -647,9 +647,9 @@
         }, {
           "name" : "$(\"select[name='id_state']\") select option by value(1)",
           "time" : {
-            "start" : 1601176732775,
-            "stop" : 1601176733253,
-            "duration" : 478
+            "start" : 1601263167374,
+            "stop" : 1601263167856,
+            "duration" : 482
           },
           "status" : "passed",
           "steps" : [ ],
@@ -662,8 +662,8 @@
         }, {
           "name" : "$(\"By.xpath: ..\") $(#postcode)",
           "time" : {
-            "start" : 1601176733254,
-            "stop" : 1601176733254,
+            "start" : 1601263167856,
+            "stop" : 1601263167856,
             "duration" : 0
           },
           "status" : "passed",
@@ -677,9 +677,9 @@
         }, {
           "name" : "$(\"#postcode\") val(88443)",
           "time" : {
-            "start" : 1601176733254,
-            "stop" : 1601176733595,
-            "duration" : 341
+            "start" : 1601263167856,
+            "stop" : 1601263168296,
+            "duration" : 440
           },
           "status" : "passed",
           "steps" : [ ],
@@ -692,8 +692,8 @@
         }, {
           "name" : "$(\"By.xpath: ..\") $(#phone_mobile)",
           "time" : {
-            "start" : 1601176733595,
-            "stop" : 1601176733595,
+            "start" : 1601263168296,
+            "stop" : 1601263168296,
             "duration" : 0
           },
           "status" : "passed",
@@ -707,9 +707,9 @@
         }, {
           "name" : "$(\"#phone_mobile\") val(097965544333)",
           "time" : {
-            "start" : 1601176733595,
-            "stop" : 1601176733938,
-            "duration" : 343
+            "start" : 1601263168296,
+            "stop" : 1601263168664,
+            "duration" : 368
           },
           "status" : "passed",
           "steps" : [ ],
@@ -722,8 +722,8 @@
         }, {
           "name" : "$(\"By.xpath: ..\") $(#alias)",
           "time" : {
-            "start" : 1601176733938,
-            "stop" : 1601176733938,
+            "start" : 1601263168664,
+            "stop" : 1601263168664,
             "duration" : 0
           },
           "status" : "passed",
@@ -737,9 +737,9 @@
         }, {
           "name" : "$(\"#alias\") val(AL35211)",
           "time" : {
-            "start" : 1601176733938,
-            "stop" : 1601176734375,
-            "duration" : 437
+            "start" : 1601263168664,
+            "stop" : 1601263169160,
+            "duration" : 496
           },
           "status" : "passed",
           "steps" : [ ],
@@ -753,7 +753,7 @@
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "user",
-          "value" : "UserModel(firstName=John, lastName=Doe, email=WywYUw@gmail.com, password=BaRpSMrLfM, phone=097965544333, address1=801 Tom Martin Dr.Birmingham, address2=AL 35211, city=Birmingham, postcode=88443, addressAlias=AL35211, dayBirth=15, monthBirth=12, yearBirth=1988, state=1)"
+          "value" : "UserModel(firstName=John, lastName=Doe, email=yqylKypSG@gmail.com, password=aIiwqtNhNc, phone=097965544333, address1=801 Tom Martin Dr.Birmingham, address2=AL 35211, city=Birmingham, postcode=88443, addressAlias=AL35211, dayBirth=15, monthBirth=12, yearBirth=1988, state=1)"
         } ],
         "stepsCount" : 18,
         "attachmentsCount" : 0,
@@ -762,8 +762,8 @@
       }, {
         "name" : "$(\"#account-creation_form\") $(#submitAccount)",
         "time" : {
-          "start" : 1601176734375,
-          "stop" : 1601176734375,
+          "start" : 1601263169161,
+          "stop" : 1601263169161,
           "duration" : 0
         },
         "status" : "passed",
@@ -777,9 +777,9 @@
       }, {
         "name" : "$(\"#submitAccount\") click()",
         "time" : {
-          "start" : 1601176734375,
-          "stop" : 1601176737913,
-          "duration" : 3538
+          "start" : 1601263169161,
+          "stop" : 1601263171858,
+          "duration" : 2697
         },
         "status" : "passed",
         "steps" : [ ],
@@ -793,26 +793,155 @@
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "user",
-        "value" : "UserModel(firstName=John, lastName=Doe, email=WywYUw@gmail.com, password=BaRpSMrLfM, phone=097965544333, address1=801 Tom Martin Dr.Birmingham, address2=AL 35211, city=Birmingham, postcode=88443, addressAlias=AL35211, dayBirth=15, monthBirth=12, yearBirth=1988, state=1)"
+        "value" : "UserModel(firstName=John, lastName=Doe, email=yqylKypSG@gmail.com, password=aIiwqtNhNc, phone=097965544333, address1=801 Tom Martin Dr.Birmingham, address2=AL 35211, city=Birmingham, postcode=88443, addressAlias=AL35211, dayBirth=15, monthBirth=12, yearBirth=1988, state=1)"
       } ],
       "stepsCount" : 40,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
-      "name" : "check created customer title",
+      "name" : "open main page",
       "time" : {
-        "start" : 1601176737923,
-        "stop" : 1601176738085,
-        "duration" : 162
+        "start" : 1601263171858,
+        "stop" : 1601263173912,
+        "duration" : 2054
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "$(\".account[title*='customer account']\") text()",
+        "name" : "navigate to page : 'class pageobjects.pages.MainPage' ",
         "time" : {
-          "start" : 1601176737923,
-          "stop" : 1601176738085,
-          "duration" : 162
+          "start" : 1601263171858,
+          "stop" : 1601263173912,
+          "duration" : 2054
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"open\") http://automationpractice.com/index.php/",
+          "time" : {
+            "start" : 1601263171859,
+            "stop" : 1601263173912,
+            "duration" : 2053
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "/"
+        }, {
+          "name" : "pageClass",
+          "value" : "class pageobjects.pages.MainPage"
+        } ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "search product by query 'shirt' ",
+      "time" : {
+        "start" : 1601263173915,
+        "stop" : 1601263177052,
+        "duration" : 3137
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"#searchbox\") $(.search_query)",
+        "time" : {
+          "start" : 1601263173916,
+          "stop" : 1601263173916,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\".search_query\") val(shirt)",
+        "time" : {
+          "start" : 1601263173926,
+          "stop" : 1601263174329,
+          "duration" : 403
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\".ac_results > ul > li[0]\") hover()",
+        "time" : {
+          "start" : 1601263174330,
+          "stop" : 1601263175613,
+          "duration" : 1283
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\".ac_results > ul > li[0]\") click()",
+        "time" : {
+          "start" : 1601263175613,
+          "stop" : 1601263177052,
+          "duration" : 1439
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "query",
+        "value" : "shirt"
+      } ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "add product to cart",
+      "time" : {
+        "start" : 1601263177052,
+        "stop" : 1601263177256,
+        "duration" : 204
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"#add_to_cart\") click()",
+        "time" : {
+          "start" : 1601263177052,
+          "stop" : 1601263177256,
+          "duration" : 204
         },
         "status" : "passed",
         "steps" : [ ],
@@ -830,33 +959,18 @@
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
-      "name" : "check my account link : MY_ADDRESSES ",
+      "name" : "start checkout",
       "time" : {
-        "start" : 1601176738180,
-        "stop" : 1601176738666,
-        "duration" : 486
+        "start" : 1601263177256,
+        "stop" : 1601263179305,
+        "duration" : 2049
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "$(\".myaccount-link-list[0]\") should be(visible)",
+        "name" : "$(\"div[id=layer_cart]\") $(a[title$='checkout'])",
         "time" : {
-          "start" : 1601176738180,
-          "stop" : 1601176738273,
-          "duration" : 93
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "hasContent" : false
-      }, {
-        "name" : "$(\".myaccount-link-list[0]\") $$(li)",
-        "time" : {
-          "start" : 1601176738273,
-          "stop" : 1601176738273,
+          "start" : 1601263177256,
+          "stop" : 1601263177256,
           "duration" : 0
         },
         "status" : "passed",
@@ -868,11 +982,11 @@
         "shouldDisplayMessage" : false,
         "hasContent" : false
       }, {
-        "name" : "$(\".myaccount-link-list[0]/li.findBy(text 'MY ADDRESSES')\") is(visible)",
+        "name" : "$(\"a[title$='checkout']\") click()",
         "time" : {
-          "start" : 1601176738273,
-          "stop" : 1601176738666,
-          "duration" : 393
+          "start" : 1601263177256,
+          "stop" : 1601263179305,
+          "duration" : 2049
         },
         "status" : "passed",
         "steps" : [ ],
@@ -884,28 +998,25 @@
         "hasContent" : false
       } ],
       "attachments" : [ ],
-      "parameters" : [ {
-        "name" : "title",
-        "value" : "MY_ADDRESSES"
-      } ],
-      "stepsCount" : 3,
+      "parameters" : [ ],
+      "stepsCount" : 2,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
-      "name" : "check my account link : MY_CREDITS_SLIPS ",
+      "name" : "proceed checkout steps",
       "time" : {
-        "start" : 1601176738667,
-        "stop" : 1601176738819,
-        "duration" : 152
+        "start" : 1601263179305,
+        "stop" : 1601263184368,
+        "duration" : 5063
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "$(\".myaccount-link-list[0]\") should be(visible)",
+        "name" : "$(\"a[class*='btn-default standard-checkout']\") click()",
         "time" : {
-          "start" : 1601176738667,
-          "stop" : 1601176738721,
-          "duration" : 54
+          "start" : 1601263179306,
+          "stop" : 1601263180957,
+          "duration" : 1651
         },
         "status" : "passed",
         "steps" : [ ],
@@ -916,11 +1027,11 @@
         "shouldDisplayMessage" : false,
         "hasContent" : false
       }, {
-        "name" : "$(\".myaccount-link-list[0]\") $$(li)",
+        "name" : "$(\"button[name='processAddress']\") click()",
         "time" : {
-          "start" : 1601176738722,
-          "stop" : 1601176738722,
-          "duration" : 0
+          "start" : 1601263180957,
+          "stop" : 1601263182283,
+          "duration" : 1326
         },
         "status" : "passed",
         "steps" : [ ],
@@ -931,11 +1042,26 @@
         "shouldDisplayMessage" : false,
         "hasContent" : false
       }, {
-        "name" : "$(\".myaccount-link-list[0]/li.findBy(text 'MY CREDIT SLIPS')\") is(visible)",
+        "name" : "$(\"#uniform-cgv\") click()",
         "time" : {
-          "start" : 1601176738722,
-          "stop" : 1601176738819,
-          "duration" : 97
+          "start" : 1601263182283,
+          "stop" : 1601263182485,
+          "duration" : 202
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"button[name='processCarrier']\") click()",
+        "time" : {
+          "start" : 1601263182486,
+          "stop" : 1601263184368,
+          "duration" : 1882
         },
         "status" : "passed",
         "steps" : [ ],
@@ -947,28 +1073,25 @@
         "hasContent" : false
       } ],
       "attachments" : [ ],
-      "parameters" : [ {
-        "name" : "title",
-        "value" : "MY_CREDITS_SLIPS"
-      } ],
-      "stepsCount" : 3,
+      "parameters" : [ ],
+      "stepsCount" : 4,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
-      "name" : "check my account link : MY_PERSONAL_INFO ",
+      "name" : "confirm Pay Check payment method",
       "time" : {
-        "start" : 1601176738820,
-        "stop" : 1601176738997,
-        "duration" : 177
+        "start" : 1601263184368,
+        "stop" : 1601263186964,
+        "duration" : 2596
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "$(\".myaccount-link-list[0]\") should be(visible)",
+        "name" : "$(\".cheque\") click()",
         "time" : {
-          "start" : 1601176738820,
-          "stop" : 1601176738849,
-          "duration" : 29
+          "start" : 1601263184369,
+          "stop" : 1601263185670,
+          "duration" : 1301
         },
         "status" : "passed",
         "steps" : [ ],
@@ -979,26 +1102,11 @@
         "shouldDisplayMessage" : false,
         "hasContent" : false
       }, {
-        "name" : "$(\".myaccount-link-list[0]\") $$(li)",
+        "name" : "$(\"#cart_navigation > button[type='submit']\") click()",
         "time" : {
-          "start" : 1601176738849,
-          "stop" : 1601176738849,
-          "duration" : 0
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "hasContent" : false
-      }, {
-        "name" : "$(\".myaccount-link-list[0]/li.findBy(text 'MY PERSONAL INFORMATION')\") is(visible)",
-        "time" : {
-          "start" : 1601176738849,
-          "stop" : 1601176738997,
-          "duration" : 148
+          "start" : 1601263185670,
+          "stop" : 1601263186964,
+          "duration" : 1294
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1010,58 +1118,25 @@
         "hasContent" : false
       } ],
       "attachments" : [ ],
-      "parameters" : [ {
-        "name" : "title",
-        "value" : "MY_PERSONAL_INFO"
-      } ],
-      "stepsCount" : 3,
+      "parameters" : [ ],
+      "stepsCount" : 2,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
-      "name" : "check my account link : ORDER_HISTORY ",
+      "name" : "check Pay Check payment status",
       "time" : {
-        "start" : 1601176738997,
-        "stop" : 1601176739091,
-        "duration" : 94
+        "start" : 1601263186964,
+        "stop" : 1601263187005,
+        "duration" : 41
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "$(\".myaccount-link-list[0]\") should be(visible)",
+        "name" : "$(\"[class='alert alert-success']\") text()",
         "time" : {
-          "start" : 1601176738997,
-          "stop" : 1601176739024,
-          "duration" : 27
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "hasContent" : false
-      }, {
-        "name" : "$(\".myaccount-link-list[0]\") $$(li)",
-        "time" : {
-          "start" : 1601176739024,
-          "stop" : 1601176739024,
-          "duration" : 0
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "hasContent" : false
-      }, {
-        "name" : "$(\".myaccount-link-list[0]/li.findBy(text 'ORDER HISTORY AND DETAILS')\") is(visible)",
-        "time" : {
-          "start" : 1601176739024,
-          "stop" : 1601176739091,
-          "duration" : 67
+          "start" : 1601263186964,
+          "stop" : 1601263187005,
+          "duration" : 41
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1073,18 +1148,15 @@
         "hasContent" : false
       } ],
       "attachments" : [ ],
-      "parameters" : [ {
-        "name" : "title",
-        "value" : "ORDER_HISTORY"
-      } ],
-      "stepsCount" : 3,
+      "parameters" : [ ],
+      "stepsCount" : 1,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "hasContent" : true
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 69,
+    "stepsCount" : 74,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -1092,10 +1164,10 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "host",
-    "value" : "fv-az76"
+    "value" : "fv-az128"
   }, {
     "name" : "thread",
-    "value" : "3677@fv-az76.ForkJoinPool-1-worker-2(13)"
+    "value" : "3690@fv-az128.ForkJoinPool-1-worker-1(12)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -1104,16 +1176,16 @@
     "value" : "java"
   }, {
     "name" : "package",
-    "value" : "MyAccountTest"
+    "value" : "PlaceOrderTest"
   }, {
     "name" : "testClass",
-    "value" : "MyAccountTest"
+    "value" : "PlaceOrderTest"
   }, {
     "name" : "testMethod",
-    "value" : "shouldDisplayAccountDetails"
+    "value" : "canPlaceOrderFromSearch"
   }, {
     "name" : "suite",
-    "value" : "Account creation"
+    "value" : "Order placement"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -1128,6 +1200,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "e6dcf187ee5d09bb.json",
+  "source" : "8ccfcad7c086b059.json",
   "parameterValues" : [ ]
 }
