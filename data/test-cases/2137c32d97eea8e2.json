@@ -1,0 +1,1103 @@
+{
+  "uid" : "2137c32d97eea8e2",
+  "name" : "user can place order with product from search result",
+  "fullName" : "PlaceOrderTest.canPlaceOrderFromSearch",
+  "historyId" : "147e0d6697c3766bc832dfc2f324614e",
+  "time" : {
+    "start" : 1602127024578,
+    "stop" : 1602127081692,
+    "duration" : 57114
+  },
+  "description" : "",
+  "status" : "failed",
+  "statusMessage" : "Element not found {a[class*='btn-default standard-checkout']}\nExpected: visible or transparent: visible or have css value opacity=0\nTimeout: 20 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"a[class*='btn-default standard-checkout']\"}",
+  "statusTrace" : "Element not found {a[class*='btn-default standard-checkout']}\nExpected: visible or transparent: visible or have css value opacity=0\nTimeout: 20 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"a[class*='btn-default standard-checkout']\"}\n\tat com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:56)\n\tat com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:133)\n\tat com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:87)\n\tat com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsInteractable(WebElementSource.java:112)\n\tat com.codeborne.selenide.commands.Click.execute(Click.java:20)\n\tat com.codeborne.selenide.commands.Click.execute(Click.java:14)\n\tat com.codeborne.selenide.commands.Commands.execute(Commands.java:152)\n\tat com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:104)\n\tat com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:70)\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\n\tat pageobjects.pages.CheckoutPage.proceedSummaryStep(CheckoutPage.java:25)\n\tat pageobjects.pages.CheckoutPage.proceedCheckoutSteps(CheckoutPage.java:58)\n\tat PlaceOrderTest.canPlaceOrderFromSearch(PlaceOrderTest.java:45)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)\n\tat org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)\n\tat org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:171)\n\tat java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:189)\n\tat java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)\n\tat java.util.concurrent.ForkJoinTask.doJoin(ForkJoinTask.java:389)\n\tat java.util.concurrent.ForkJoinTask.join(ForkJoinTask.java:719)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.joinConcurrentTasksInReverseOrderToEnableWorkStealing(ForkJoinPoolHierarchicalTestExecutorService.java:148)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:122)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)\n\tat org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:171)\n\tat java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:189)\n\tat java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)\n\tat java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)\n\tat java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)\n\tat java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"a[class*='btn-default standard-checkout']\"}\n  (Session info: chrome=85.0.4183.121)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az176', ip: '10.1.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-1026-azure', java.version: '1.8.0_265'\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.0pezoM}, goog:chromeOptions: {debuggerAddress: localhost:44475}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 105c6254376915a64ffdeaf4c8e8265d\n*** Element info: {Using=css selector, value=a[class*='btn-default standard-checkout']}\n\tat sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:65)\n\tat com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:40)\n\tat com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:101)\n\tat com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:72)\n\t... 62 more\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "failed",
+    "statusMessage" : "Element not found {a[class*='btn-default standard-checkout']}\nExpected: visible or transparent: visible or have css value opacity=0\nTimeout: 20 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"a[class*='btn-default standard-checkout']\"}",
+    "statusTrace" : "Element not found {a[class*='btn-default standard-checkout']}\nExpected: visible or transparent: visible or have css value opacity=0\nTimeout: 20 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"a[class*='btn-default standard-checkout']\"}\n\tat com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:56)\n\tat com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:133)\n\tat com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:87)\n\tat com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsInteractable(WebElementSource.java:112)\n\tat com.codeborne.selenide.commands.Click.execute(Click.java:20)\n\tat com.codeborne.selenide.commands.Click.execute(Click.java:14)\n\tat com.codeborne.selenide.commands.Commands.execute(Commands.java:152)\n\tat com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:104)\n\tat com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:70)\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\n\tat pageobjects.pages.CheckoutPage.proceedSummaryStep(CheckoutPage.java:25)\n\tat pageobjects.pages.CheckoutPage.proceedCheckoutSteps(CheckoutPage.java:58)\n\tat PlaceOrderTest.canPlaceOrderFromSearch(PlaceOrderTest.java:45)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)\n\tat org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)\n\tat org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:171)\n\tat java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:189)\n\tat java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)\n\tat java.util.concurrent.ForkJoinTask.doJoin(ForkJoinTask.java:389)\n\tat java.util.concurrent.ForkJoinTask.join(ForkJoinTask.java:719)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.joinConcurrentTasksInReverseOrderToEnableWorkStealing(ForkJoinPoolHierarchicalTestExecutorService.java:148)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:122)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)\n\tat org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:171)\n\tat java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:189)\n\tat java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)\n\tat java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)\n\tat java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)\n\tat java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"a[class*='btn-default standard-checkout']\"}\n  (Session info: chrome=85.0.4183.121)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az176', ip: '10.1.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-1026-azure', java.version: '1.8.0_265'\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.0pezoM}, goog:chromeOptions: {debuggerAddress: localhost:44475}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 105c6254376915a64ffdeaf4c8e8265d\n*** Element info: {Using=css selector, value=a[class*='btn-default standard-checkout']}\n\tat sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:65)\n\tat com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:40)\n\tat com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:101)\n\tat com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:72)\n\t... 62 more\n",
+    "steps" : [ {
+      "name" : "open main page",
+      "time" : {
+        "start" : 1602127024706,
+        "stop" : 1602127035920,
+        "duration" : 11214
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "navigate to page : 'class pageobjects.pages.MainPage' ",
+        "time" : {
+          "start" : 1602127024706,
+          "stop" : 1602127035920,
+          "duration" : 11214
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"open\") http://automationpractice.com/index.php/",
+          "time" : {
+            "start" : 1602127024766,
+            "stop" : 1602127035919,
+            "duration" : 11153
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "/"
+        }, {
+          "name" : "pageClass",
+          "value" : "class pageobjects.pages.MainPage"
+        } ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "click SignIn button",
+      "time" : {
+        "start" : 1602127035920,
+        "stop" : 1602127038689,
+        "duration" : 2769
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\".login\") click()",
+        "time" : {
+          "start" : 1602127035920,
+          "stop" : 1602127038658,
+          "duration" : 2738
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "start to create account",
+      "time" : {
+        "start" : 1602127038689,
+        "stop" : 1602127039703,
+        "duration" : 1014
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"#create-account_form\") $(input[name='email_create'])",
+        "time" : {
+          "start" : 1602127038690,
+          "stop" : 1602127038690,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"input[name='email_create']\") val(xUzHmpmmJ@gmail.com)",
+        "time" : {
+          "start" : 1602127038690,
+          "stop" : 1602127039397,
+          "duration" : 707
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"#create-account_form\") $(#SubmitCreate)",
+        "time" : {
+          "start" : 1602127039397,
+          "stop" : 1602127039397,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"#SubmitCreate\") click()",
+        "time" : {
+          "start" : 1602127039397,
+          "stop" : 1602127039702,
+          "duration" : 305
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "UserModel(firstName=John, lastName=Doe, email=xUzHmpmmJ@gmail.com, password=bDjJKCKAwo, phone=097965544333, address1=801 Tom Martin Dr.Birmingham, address2=AL 35211, city=Birmingham, postcode=88443, addressAlias=AL35211, dayBirth=15, monthBirth=12, yearBirth=1988, state=1)"
+      } ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "register user",
+      "time" : {
+        "start" : 1602127039709,
+        "stop" : 1602127052058,
+        "duration" : 12349
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"#account-creation_form\") $$(.account_creation > .page-subheading)",
+        "time" : {
+          "start" : 1602127039709,
+          "stop" : 1602127039717,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"#account-creation_form/.account_creation > .page-subheading.filter(text 'Your personal information')[0]\") parent()",
+        "time" : {
+          "start" : 1602127039720,
+          "stop" : 1602127039720,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "fill personal information",
+        "time" : {
+          "start" : 1602127039720,
+          "stop" : 1602127045710,
+          "duration" : 5990
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"By.xpath: ..\") $(#customer_firstname)",
+          "time" : {
+            "start" : 1602127039727,
+            "stop" : 1602127039727,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"#customer_firstname\") val(John)",
+          "time" : {
+            "start" : 1602127039727,
+            "stop" : 1602127043573,
+            "duration" : 3846
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "$(\"By.xpath: ..\") should(exist)",
+            "time" : {
+              "start" : 1602127039828,
+              "stop" : 1602127043092,
+              "duration" : 3264
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "$(\"#account-creation_form/.account_creation > .page-subheading.filter(text 'Your personal information')[0]\") should(exist)",
+              "time" : {
+                "start" : 1602127039879,
+                "stop" : 1602127042513,
+                "duration" : 2634
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "stepsCount" : 0,
+              "attachmentsCount" : 0,
+              "shouldDisplayMessage" : false,
+              "hasContent" : false
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 1,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 2,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "$(\"By.xpath: ..\") $(#customer_lastname)",
+          "time" : {
+            "start" : 1602127043573,
+            "stop" : 1602127043573,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"#customer_lastname\") val(Doe)",
+          "time" : {
+            "start" : 1602127043573,
+            "stop" : 1602127043936,
+            "duration" : 363
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"By.xpath: ..\") $(#passwd)",
+          "time" : {
+            "start" : 1602127043938,
+            "stop" : 1602127043938,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"#passwd\") val(bDjJKCKAwo)",
+          "time" : {
+            "start" : 1602127043938,
+            "stop" : 1602127044389,
+            "duration" : 451
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"By.xpath: ..\") $(select[name='days'])",
+          "time" : {
+            "start" : 1602127044389,
+            "stop" : 1602127044389,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"select[name='days']\") select option by value(15)",
+          "time" : {
+            "start" : 1602127044389,
+            "stop" : 1602127044801,
+            "duration" : 412
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"By.xpath: ..\") $(select[name='months'])",
+          "time" : {
+            "start" : 1602127044801,
+            "stop" : 1602127044801,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"select[name='months']\") select option by value(12)",
+          "time" : {
+            "start" : 1602127044801,
+            "stop" : 1602127045400,
+            "duration" : 599
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"By.xpath: ..\") $(select[name='years'])",
+          "time" : {
+            "start" : 1602127045400,
+            "stop" : 1602127045400,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"select[name='years']\") select option by value(1988)",
+          "time" : {
+            "start" : 1602127045400,
+            "stop" : 1602127045710,
+            "duration" : 310
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "user",
+          "value" : "UserModel(firstName=John, lastName=Doe, email=xUzHmpmmJ@gmail.com, password=bDjJKCKAwo, phone=097965544333, address1=801 Tom Martin Dr.Birmingham, address2=AL 35211, city=Birmingham, postcode=88443, addressAlias=AL35211, dayBirth=15, monthBirth=12, yearBirth=1988, state=1)"
+        } ],
+        "stepsCount" : 14,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\"#account-creation_form\") $$(.account_creation > .page-subheading)",
+        "time" : {
+          "start" : 1602127045710,
+          "stop" : 1602127045710,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"#account-creation_form/.account_creation > .page-subheading.filter(text 'Your address')[0]\") parent()",
+        "time" : {
+          "start" : 1602127045710,
+          "stop" : 1602127045710,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "fill address information",
+        "time" : {
+          "start" : 1602127045710,
+          "stop" : 1602127049030,
+          "duration" : 3320
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"By.xpath: ..\") $(#firstname)",
+          "time" : {
+            "start" : 1602127045710,
+            "stop" : 1602127045710,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"#firstname\") val(John)",
+          "time" : {
+            "start" : 1602127045710,
+            "stop" : 1602127046088,
+            "duration" : 378
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"By.xpath: ..\") $(#lastname)",
+          "time" : {
+            "start" : 1602127046088,
+            "stop" : 1602127046088,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"#lastname\") val(Doe)",
+          "time" : {
+            "start" : 1602127046088,
+            "stop" : 1602127046426,
+            "duration" : 338
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"By.xpath: ..\") $(#address1)",
+          "time" : {
+            "start" : 1602127046426,
+            "stop" : 1602127046426,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"#address1\") val(801 Tom Martin Dr.Birmingham)",
+          "time" : {
+            "start" : 1602127046426,
+            "stop" : 1602127046862,
+            "duration" : 436
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"By.xpath: ..\") $(#address2)",
+          "time" : {
+            "start" : 1602127046862,
+            "stop" : 1602127046863,
+            "duration" : 1
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"#address2\") val(AL 35211)",
+          "time" : {
+            "start" : 1602127046863,
+            "stop" : 1602127047235,
+            "duration" : 372
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"By.xpath: ..\") $(#city)",
+          "time" : {
+            "start" : 1602127047235,
+            "stop" : 1602127047235,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"#city\") val(Birmingham)",
+          "time" : {
+            "start" : 1602127047235,
+            "stop" : 1602127047536,
+            "duration" : 301
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"By.xpath: ..\") $(select[name='id_state'])",
+          "time" : {
+            "start" : 1602127047536,
+            "stop" : 1602127047536,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"select[name='id_state']\") select option by value(1)",
+          "time" : {
+            "start" : 1602127047536,
+            "stop" : 1602127047991,
+            "duration" : 455
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"By.xpath: ..\") $(#postcode)",
+          "time" : {
+            "start" : 1602127047991,
+            "stop" : 1602127047991,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"#postcode\") val(88443)",
+          "time" : {
+            "start" : 1602127047991,
+            "stop" : 1602127048288,
+            "duration" : 297
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"By.xpath: ..\") $(#phone_mobile)",
+          "time" : {
+            "start" : 1602127048288,
+            "stop" : 1602127048288,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"#phone_mobile\") val(097965544333)",
+          "time" : {
+            "start" : 1602127048288,
+            "stop" : 1602127048605,
+            "duration" : 317
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"By.xpath: ..\") $(#alias)",
+          "time" : {
+            "start" : 1602127048605,
+            "stop" : 1602127048605,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"#alias\") val(AL35211)",
+          "time" : {
+            "start" : 1602127048605,
+            "stop" : 1602127049030,
+            "duration" : 425
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "user",
+          "value" : "UserModel(firstName=John, lastName=Doe, email=xUzHmpmmJ@gmail.com, password=bDjJKCKAwo, phone=097965544333, address1=801 Tom Martin Dr.Birmingham, address2=AL 35211, city=Birmingham, postcode=88443, addressAlias=AL35211, dayBirth=15, monthBirth=12, yearBirth=1988, state=1)"
+        } ],
+        "stepsCount" : 18,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\"#account-creation_form\") $(#submitAccount)",
+        "time" : {
+          "start" : 1602127049031,
+          "stop" : 1602127049031,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"#submitAccount\") click()",
+        "time" : {
+          "start" : 1602127049031,
+          "stop" : 1602127052058,
+          "duration" : 3027
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "UserModel(firstName=John, lastName=Doe, email=xUzHmpmmJ@gmail.com, password=bDjJKCKAwo, phone=097965544333, address1=801 Tom Martin Dr.Birmingham, address2=AL 35211, city=Birmingham, postcode=88443, addressAlias=AL35211, dayBirth=15, monthBirth=12, yearBirth=1988, state=1)"
+      } ],
+      "stepsCount" : 40,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "open main page",
+      "time" : {
+        "start" : 1602127052058,
+        "stop" : 1602127053993,
+        "duration" : 1935
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "navigate to page : 'class pageobjects.pages.MainPage' ",
+        "time" : {
+          "start" : 1602127052059,
+          "stop" : 1602127053992,
+          "duration" : 1933
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"open\") http://automationpractice.com/index.php/",
+          "time" : {
+            "start" : 1602127052059,
+            "stop" : 1602127053992,
+            "duration" : 1933
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "/"
+        }, {
+          "name" : "pageClass",
+          "value" : "class pageobjects.pages.MainPage"
+        } ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "search product by query 'shirt' ",
+      "time" : {
+        "start" : 1602127053995,
+        "stop" : 1602127059875,
+        "duration" : 5880
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"#searchbox\") $(.search_query)",
+        "time" : {
+          "start" : 1602127053995,
+          "stop" : 1602127053995,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\".search_query\") val(shirt)",
+        "time" : {
+          "start" : 1602127053996,
+          "stop" : 1602127054317,
+          "duration" : 321
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\".ac_results > ul > li[0]\") hover()",
+        "time" : {
+          "start" : 1602127054317,
+          "stop" : 1602127057536,
+          "duration" : 3219
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\".ac_results > ul > li[0]\") click()",
+        "time" : {
+          "start" : 1602127057536,
+          "stop" : 1602127059875,
+          "duration" : 2339
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "query",
+        "value" : "shirt"
+      } ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "add product to cart",
+      "time" : {
+        "start" : 1602127059875,
+        "stop" : 1602127060081,
+        "duration" : 206
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"#add_to_cart\") click()",
+        "time" : {
+          "start" : 1602127059875,
+          "stop" : 1602127060081,
+          "duration" : 206
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "start checkout",
+      "time" : {
+        "start" : 1602127060081,
+        "stop" : 1602127061244,
+        "duration" : 1163
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"div[id=layer_cart]\") $(a[title$='checkout'])",
+        "time" : {
+          "start" : 1602127060081,
+          "stop" : 1602127060081,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"a[title$='checkout']\") click()",
+        "time" : {
+          "start" : 1602127060082,
+          "stop" : 1602127061244,
+          "duration" : 1162
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "proceed checkout steps",
+      "time" : {
+        "start" : 1602127061246,
+        "stop" : 1602127081634,
+        "duration" : 20388
+      },
+      "status" : "failed",
+      "statusMessage" : "Element not found {a[class*='btn-default standard-checkout']}\nExpected: visible or transparent: visible or have css value opacity=0\nTimeout: 20 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"a[class*='btn-default standard-checkout']\"}",
+      "statusTrace" : "Element not found {a[class*='btn-default standard-checkout']}\nExpected: visible or transparent: visible or have css value opacity=0\nTimeout: 20 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"a[class*='btn-default standard-checkout']\"}\n\tat com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:56)\n\tat com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:133)\n\tat com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:87)\n\tat com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsInteractable(WebElementSource.java:112)\n\tat com.codeborne.selenide.commands.Click.execute(Click.java:20)\n\tat com.codeborne.selenide.commands.Click.execute(Click.java:14)\n\tat com.codeborne.selenide.commands.Commands.execute(Commands.java:152)\n\tat com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:104)\n\tat com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:70)\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\n\tat pageobjects.pages.CheckoutPage.proceedSummaryStep(CheckoutPage.java:25)\n\tat pageobjects.pages.CheckoutPage.proceedCheckoutSteps(CheckoutPage.java:58)\n\tat PlaceOrderTest.canPlaceOrderFromSearch(PlaceOrderTest.java:45)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)\n\tat org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)\n\tat org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:171)\n\tat java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:189)\n\tat java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)\n\tat java.util.concurrent.ForkJoinTask.doJoin(ForkJoinTask.java:389)\n\tat java.util.concurrent.ForkJoinTask.join(ForkJoinTask.java:719)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.joinConcurrentTasksInReverseOrderToEnableWorkStealing(ForkJoinPoolHierarchicalTestExecutorService.java:148)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:122)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)\n\tat org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:171)\n\tat java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:189)\n\tat java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)\n\tat java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)\n\tat java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)\n\tat java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"a[class*='btn-default standard-checkout']\"}\n  (Session info: chrome=85.0.4183.121)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az176', ip: '10.1.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-1026-azure', java.version: '1.8.0_265'\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.0pezoM}, goog:chromeOptions: {debuggerAddress: localhost:44475}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 105c6254376915a64ffdeaf4c8e8265d\n*** Element info: {Using=css selector, value=a[class*='btn-default standard-checkout']}\n\tat sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:65)\n\tat com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:40)\n\tat com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:101)\n\tat com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:72)\n\t... 62 more\n",
+      "steps" : [ {
+        "name" : "$(\"a[class*='btn-default standard-checkout']\") click()",
+        "time" : {
+          "start" : 1602127061249,
+          "stop" : 1602127081633,
+          "duration" : 20384
+        },
+        "status" : "failed",
+        "statusMessage" : "Element not found {a[class*='btn-default standard-checkout']}\nExpected: visible or transparent: visible or have css value opacity=0\nTimeout: 20 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"a[class*='btn-default standard-checkout']\"}",
+        "statusTrace" : "Element not found {a[class*='btn-default standard-checkout']}\nExpected: visible or transparent: visible or have css value opacity=0\nTimeout: 20 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"a[class*='btn-default standard-checkout']\"}\n\tat com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:56)\n\tat com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:133)\n\tat com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:87)\n\tat com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsInteractable(WebElementSource.java:112)\n\tat com.codeborne.selenide.commands.Click.execute(Click.java:20)\n\tat com.codeborne.selenide.commands.Click.execute(Click.java:14)\n\tat com.codeborne.selenide.commands.Commands.execute(Commands.java:152)\n\tat com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:104)\n\tat com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:70)\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\n\tat pageobjects.pages.CheckoutPage.proceedSummaryStep(CheckoutPage.java:25)\n\tat pageobjects.pages.CheckoutPage.proceedCheckoutSteps(CheckoutPage.java:58)\n\tat PlaceOrderTest.canPlaceOrderFromSearch(PlaceOrderTest.java:45)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)\n\tat org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)\n\tat org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:171)\n\tat java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:189)\n\tat java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)\n\tat java.util.concurrent.ForkJoinTask.doJoin(ForkJoinTask.java:389)\n\tat java.util.concurrent.ForkJoinTask.join(ForkJoinTask.java:719)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.joinConcurrentTasksInReverseOrderToEnableWorkStealing(ForkJoinPoolHierarchicalTestExecutorService.java:148)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:122)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)\n\tat org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:171)\n\tat java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:189)\n\tat java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)\n\tat java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)\n\tat java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)\n\tat java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"a[class*='btn-default standard-checkout']\"}\n  (Session info: chrome=85.0.4183.121)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az176', ip: '10.1.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-1026-azure', java.version: '1.8.0_265'\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.0pezoM}, goog:chromeOptions: {debuggerAddress: localhost:44475}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 105c6254376915a64ffdeaf4c8e8265d\n*** Element info: {Using=css selector, value=a[class*='btn-default standard-checkout']}\n\tat sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:65)\n\tat com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:40)\n\tat com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:101)\n\tat com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:72)\n\t... 62 more\n",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "67078343901cd7ba",
+          "name" : "Screenshot",
+          "source" : "67078343901cd7ba.png",
+          "type" : "image/png",
+          "size" : 25161
+        }, {
+          "uid" : "22d3bb780478beb7",
+          "name" : "Logs from: browser",
+          "source" : "22d3bb780478beb7.txt",
+          "type" : "application/json",
+          "size" : 177
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 66,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az176"
+  }, {
+    "name" : "thread",
+    "value" : "3669@fv-az176.ForkJoinPool-1-worker-2(13)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "PlaceOrderTest"
+  }, {
+    "name" : "testClass",
+    "value" : "PlaceOrderTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "canPlaceOrderFromSearch"
+  }, {
+    "name" : "suite",
+    "value" : "Order placement"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2137c32d97eea8e2.json",
+  "parameterValues" : [ ]
+}
