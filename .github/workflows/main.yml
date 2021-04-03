@@ -31,12 +31,10 @@ jobs:
 
       - name: Run UI-Automation tests with Chrome browser
         run: ./gradlew clean -Pthread=3 -Plaunch=remote testChrome
-        continue-on-error: true
 
       - name: Generate Allure report
         if: always()
         run: ./gradlew allureReport
-        continue-on-error: true
 
       - name: Deploy Allure report
         if: always()
@@ -45,7 +43,9 @@ jobs:
           ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: build/reports/allure-report
+
       - uses: actions/upload-artifact@v2
+        if: always()
         with:
          name: allure report
          path: build/reports/allure-report
