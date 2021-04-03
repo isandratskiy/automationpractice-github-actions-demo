@@ -10,8 +10,6 @@ group 'automationpractice-demo'
 version '1.0.0'
 
 sourceCompatibility = JavaVersion.VERSION_1_8
-compileJava.options.encoding = "UTF-8"
-compileTestJava.options.encoding = "UTF-8"
 
 repositories {
     mavenCentral()
@@ -38,29 +36,22 @@ dependencies {
 tasks.withType(Test) {
     useJUnitPlatform()
 
-/*    testLogging {
-        showStandardStreams = true
-        events "passed", "failed"
-        exceptionFormat = "full"
-        displayGranularity = 4
-    }*/
-
     testlogger {
         theme 'mocha-parallel'
         showExceptions true
-        showStackTraces true
+        showStackTraces false
         showFullStackTraces false
-        showCauses true
-        slowThreshold 2000
+        showCauses false
+        slowThreshold 1000
         showSummary true
-        showSimpleNames false
+        showSimpleNames true
         showPassed true
-        showSkipped true
+        showSkipped false
         showFailed true
-        showStandardStreams true
-        showPassedStandardStreams true
-        showSkippedStandardStreams true
-        showFailedStandardStreams true
+        showStandardStreams false
+        showPassedStandardStreams false
+        showSkippedStandardStreams false
+        showFailedStandardStreams false
         logLevel 'lifecycle'
     }
 
