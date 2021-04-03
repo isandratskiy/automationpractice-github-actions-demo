@@ -46,7 +46,7 @@ tasks.withType(Test) {
     }*/
 
     testlogger {
-        theme 'mocha'
+        theme 'mocha-parallel'
         showExceptions true
         showStackTraces true
         showFullStackTraces false
@@ -74,7 +74,6 @@ tasks.withType(Test) {
     systemProperties["junit.jupiter.execution.parallel.config.strategy"] = "fixed"
     systemProperties["junit.jupiter.execution.parallel.config.fixed.parallelism"] = "$thread"
     systemProperties["site.locale"] = "$locale"
-    systemProperties["file.encoding"] = "UTF-8"
 }
 
 allure {
