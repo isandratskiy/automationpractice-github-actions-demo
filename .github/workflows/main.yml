@@ -21,7 +21,7 @@ jobs:
         with:
           java-version: 1.8
 
-      - name: Set up Selenoid Infrastructure
+      - name: Set up Selenoid
         run: ./selenoid_start.sh
 
       - name: Run UI-Automation tests with Chrome browser
