@@ -10,6 +10,8 @@ group 'automationpractice-demo'
 version '1.0.0'
 
 sourceCompatibility = JavaVersion.VERSION_1_8
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
 
 repositories {
     mavenCentral()
@@ -72,6 +74,7 @@ tasks.withType(Test) {
     systemProperties["junit.jupiter.execution.parallel.config.strategy"] = "fixed"
     systemProperties["junit.jupiter.execution.parallel.config.fixed.parallelism"] = "$thread"
     systemProperties["site.locale"] = "$locale"
+    systemProperties["file.encoding"] = "UTF-8"
 }
 
 allure {
