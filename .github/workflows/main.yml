@@ -40,7 +40,7 @@ jobs:
         run: ./selenoid_start.sh
 
       - name: Run UI-Automation tests with Chrome browser
-        run: ./gradlew clean -Pthread=3 -Plaunch=remote testChrome
+        run: ./gradlew -Pthread=3 -Plaunch=remote testChrome
 
       - name: Generate Allure report
         if: always()
