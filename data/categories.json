@@ -1,26 +1,56 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "name" : "categories",
   "children" : [ {
     "name" : "Product defects",
     "children" : [ {
-      "name" : "Element not found {ul[class*='sf-menu clearfix menu-content']/li.findBy(text 'Women')}\nExpected: visible or transparent: visible or have css value opacity=0\nTimeout: 20 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"ul[class*='sf-menu clearfix menu-content']\"}",
+      "name" : "Element not found {.login}\nExpected: visible or transparent: visible or have css value opacity=0\nTimeout: 20 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".login\"}",
       "children" : [ {
-        "name" : "user can place order with product from category page",
-        "uid" : "794cda93d9fc1783",
-        "parentUid" : "fae2250486b9d3ca92aaafb6aa3e5372",
+        "name" : "user can place order with product from search result",
+        "uid" : "69ce4cb4286872c4",
+        "parentUid" : "179f3a25d8c7af02ea6ec42227a7c3ef",
         "status" : "failed",
         "time" : {
-          "start" : 1622533287158,
-          "stop" : 1622533353317,
-          "duration" : 66159
+          "start" : 1622619837474,
+          "stop" : 1622619862130,
+          "duration" : 24656
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "user can place order with product from category page",
+        "uid" : "2c60e63df908c263",
+        "parentUid" : "179f3a25d8c7af02ea6ec42227a7c3ef",
+        "status" : "failed",
+        "time" : {
+          "start" : 1622619837478,
+          "stop" : 1622619866516,
+          "duration" : 29038
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "fae2250486b9d3ca92aaafb6aa3e5372"
+      "uid" : "179f3a25d8c7af02ea6ec42227a7c3ef"
+    }, {
+      "name" : "All account links should be displayed. (5 failures)\n\tcom.codeborne.selenide.ex.ElementNotFound: Element not found {.account[title*='customer account']}\nExpected: exist\nTimeout: 20 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".account[title*='customer account']\"}\n\tcom.codeborne.selenide.ex.ElementNotFound: Element not found {.myaccount-link-list[0]}\nExpected: visible\nTimeout: 20 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".myaccount-link-list\"}\n\tcom.codeborne.selenide.ex.ElementNotFound: Element not found {.myaccount-link-list[0]}\nExpected: visible\nTimeout: 20 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".myaccount-link-list\"}\n\tcom.codeborne.selenide.ex.ElementNotFound: Element not found {.myaccount-link-list[0]}\nExpected: visible\nTimeout: 20 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".myaccount-link-list\"}\n\tcom.codeborne.selenide.ex.ElementNotFound: Element not found {.myaccount-link-list[0]}\nExpected: visible\nTimeout: 20 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".myaccount-link-list\"}",
+      "children" : [ {
+        "name" : "user should see account details after registration flow",
+        "uid" : "2a4749d3488670f0",
+        "parentUid" : "427e409eb38e1199e0f8f7c6e069eaeb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1622619837474,
+          "stop" : 1622619978006,
+          "duration" : 140532
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "427e409eb38e1199e0f8f7c6e069eaeb"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
-  } ]
+  } ],
+  "name" : "categories"
 }
