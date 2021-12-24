@@ -19,12 +19,27 @@ public final class WebDriverFactory {
             case "firefox.local":
                 Browser.LOCAL_FIREFOX.start();
                 break;
-            default: Browser.LOCAL_CHROME.start();
+            default:
+                Browser.LOCAL_CHROME.start();
         }
     }
 
     public static void shutdownDriverInstance() {
         getWebDriver().quit();
+    }
+
+    private static String getBrowserProperty() {
+        return getProperty(BROWSER_PROPERTY, EMPTY);
+    }
+
+    private static void setRemoteCapabilities() {
+        browserCapabilities.setCapability("noProxy", true);
+        browserCapabilities.setCapability("enableVNC", true);
+        browserCapabilities.setCapability("enableVideo", false);
+    }
+
+    private static void setRemoteInstance() {
+        remote = "http://0.0.0.0:4444/wd/hub";
     }
 
     private enum Browser {
@@ -58,19 +73,5 @@ public final class WebDriverFactory {
         };
 
         abstract void start();
-    }
-
-    private static String getBrowserProperty() {
-        return getProperty(BROWSER_PROPERTY, EMPTY);
-    }
-
-    private static void setRemoteCapabilities() {
-        browserCapabilities.setCapability("noProxy", true);
-        browserCapabilities.setCapability("enableVNC", true);
-        browserCapabilities.setCapability("enableVideo", false);
-    }
-
-    private static void setRemoteInstance() {
-        remote = "http://0.0.0.0:4444/wd/hub";
     }
 }

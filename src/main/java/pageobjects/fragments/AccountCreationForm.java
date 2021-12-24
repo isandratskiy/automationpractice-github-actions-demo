@@ -5,8 +5,8 @@ import io.qameta.allure.Step;
 import lombok.AllArgsConstructor;
 import model.UserModel;
 
-import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Selenide.element;
 
 @AllArgsConstructor
 public class AccountCreationForm {
