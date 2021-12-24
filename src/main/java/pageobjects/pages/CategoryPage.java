@@ -6,7 +6,7 @@ import lombok.val;
 import pageobjects.AbstractPage;
 import pageobjects.fragments.ProductFragment;
 
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
 
 public class CategoryPage extends AbstractPage {
 

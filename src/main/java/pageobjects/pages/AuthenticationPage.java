@@ -6,8 +6,8 @@ import model.UserModel;
 import pageobjects.AbstractPage;
 import pageobjects.fragments.AccountCreationForm;
 
-import static com.codeborne.selenide.Selenide.*;
-import static org.apache.commons.lang3.StringUtils.*;
+import static com.codeborne.selenide.Selenide.$;
+import static org.apache.commons.lang3.StringUtils.LF;
 
 public class AuthenticationPage extends AbstractPage {
 

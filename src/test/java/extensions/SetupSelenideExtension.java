@@ -5,8 +5,9 @@ import org.junit.jupiter.api.extension.BeforeAllCallback;
 import org.junit.jupiter.api.extension.BeforeEachCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
 
-import static core.Configuration.*;
-import static driver.WebDriverFactory.*;
+import static core.Configuration.buildConfig;
+import static driver.WebDriverFactory.createDriverInstance;
+import static driver.WebDriverFactory.shutdownDriverInstance;
 
 public class SetupSelenideExtension implements BeforeEachCallback, AfterEachCallback, BeforeAllCallback {
     @Override

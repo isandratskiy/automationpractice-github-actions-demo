@@ -12,7 +12,7 @@ import java.net.URL;
 import java.util.HashMap;
 
 import static io.github.bonigarcia.wdm.WebDriverManager.chromedriver;
-import static java.util.Arrays.*;
+import static java.util.Arrays.asList;
 
 public class ChromeDriverProvider {
     private static ChromeOptions getOptions() {

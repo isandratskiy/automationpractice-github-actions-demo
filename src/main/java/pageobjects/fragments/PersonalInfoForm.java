@@ -7,7 +7,7 @@ import lombok.AllArgsConstructor;
 import model.UserModel;
 
 import static com.google.common.flogger.FluentLogger.forEnclosingClass;
-import static java.lang.String.*;
+import static java.lang.String.valueOf;
 
 @AllArgsConstructor
 public class PersonalInfoForm {
@@ -43,7 +43,6 @@ public class PersonalInfoForm {
         this.container.$("select[name='months']").selectOptionByValue(valueOf(user.getMonthBirth()));
         this.container.$("select[name='years']").selectOptionByValue(valueOf(user.getYearBirth()));
     }
-
 
 
 }

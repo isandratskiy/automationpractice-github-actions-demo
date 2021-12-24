@@ -5,11 +5,11 @@ import lombok.val;
 
 import java.net.URL;
 
-import static com.codeborne.selenide.Configuration.*;
+import static com.codeborne.selenide.Configuration.browser;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static driver.WebDriverFactory.Browser.*;
 import static java.lang.System.getProperty;
-import static org.apache.commons.lang3.StringUtils.*;
+import static org.apache.commons.lang3.StringUtils.EMPTY;
 
 public class WebDriverFactory {
     private static final String BROWSER_PROPERTY = "browser";
@@ -28,12 +28,26 @@ public class WebDriverFactory {
             case "chrome.local":
                 LOCAL_CHROME.start();
                 break;
-            default: LOCAL_CHROME.start();
+            default:
+                LOCAL_CHROME.start();
         }
     }
 
     public static void shutdownDriverInstance() {
         getWebDriver().quit();
+    }
+
+    private static String getBrowserProperty() {
+        return getProperty(BROWSER_PROPERTY) == null
+                ? EMPTY
+                : getProperty(BROWSER_PROPERTY);
+    }
+
+    @SneakyThrows
+    private static void setRemoteInstance(Class clazz) {
+        val field = clazz.getDeclaredField("instance");
+        field.setAccessible(true);
+        field.set(null, new URL("http://0.0.0.0:4444/wd/hub"));
     }
 
     enum Browser {
@@ -67,18 +81,5 @@ public class WebDriverFactory {
         };
 
         abstract void start();
-    }
-
-    private static String getBrowserProperty() {
-        return getProperty(BROWSER_PROPERTY) == null
-                ? EMPTY
-                : getProperty(BROWSER_PROPERTY);
-    }
-
-    @SneakyThrows
-    private static void setRemoteInstance(Class clazz) {
-        val field = clazz.getDeclaredField("instance");
-        field.setAccessible(true);
-        field.set(null, new URL("http://0.0.0.0:4444/wd/hub"));
     }
 }

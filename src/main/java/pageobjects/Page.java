@@ -4,7 +4,7 @@ import com.google.common.flogger.FluentLogger;
 import io.qameta.allure.Step;
 import lombok.SneakyThrows;
 
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.open;
 import static com.google.common.flogger.FluentLogger.forEnclosingClass;
 
 public abstract class Page {
@@ -15,7 +15,7 @@ public abstract class Page {
         logger.atInfo().log(
                 "navigate to : \n ".concat(pageClass.getSimpleName())
         );
-        return  open(url, pageClass);
+        return open(url, pageClass);
     }
 
     @SneakyThrows

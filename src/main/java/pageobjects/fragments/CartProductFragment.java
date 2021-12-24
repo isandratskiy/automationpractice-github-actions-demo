@@ -5,7 +5,7 @@ import io.qameta.allure.Step;
 import lombok.AllArgsConstructor;
 import pageobjects.pages.CheckoutPage;
 
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
 
 @AllArgsConstructor
 public class CartProductFragment {
